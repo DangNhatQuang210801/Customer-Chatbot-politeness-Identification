@@ -1,3 +1,27 @@
+🌱 What I built
+This project is a full pipeline to test whether polite chatbot replies make people feel more satisfied and more willing to follow instructions.
+
+Step 1 – Stimuli
+We start with real customer prompts and two chatbot replies (Chatbot A vs Chatbot B). Brands are hidden. Replies are paired so each prompt has a “less polite” and a “more polite” version.
+
+Step 2 – Tags
+Each reply is coded with politeness strategies (apology, empathy, hedges, refusal, next-step, etc.) using a frozen rulebook. This turns messy text into clean, machine-readable labels.
+
+Step 3 – Survey
+We build survey blocks where participants see the A/B replies and rate them on politeness (PI), satisfaction (CSAT), clarity (HL), and compliance (CMP). Neutral filler items and attention checks keep responses honest.
+
+Step 4 – Data
+Survey responses are cleaned and merged with metadata and tag labels. This produces tidy tables where each row is one participant’s score for one reply.
+
+Step 5 – Checks
+We run quality checks: reliability of survey items (Cronbach’s α), attention-pass rates, and manipulation checks (whether B really scores higher on politeness tags than A).
+
+Step 6 – Analysis
+We test A vs B differences with paired t-tests and mixed-effects models. This shows if polite replies truly improve satisfaction, helpfulness, or compliance across all prompts.
+
+Step 7 – Results & Reporting
+We generate figures (bar charts with CIs, tag-effect plots), a minimal dashboard, and assemble notes into the final paper/report and presentation.
+
 STIMULI & TASKS
 Prompts.csv + Replies.csv / Replies-masked.csv → Tasks-json.ipynb → Replies\_Tasks.csv  \[pair\_id, Prompt\_Id, Reply\_Id, condition(A/B), bot\_mask, reply\_text]
 Tag Book v1.docx + Tags.txt → Rules\_book.ipynb → tagbook\_v1\_1.json / tagbook\_v1\_1.md  \[frozen rules]
