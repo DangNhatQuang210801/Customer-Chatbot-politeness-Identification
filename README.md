@@ -1,33 +1,33 @@
-Stimuli & tasks
-Prompts.csv + Replies.csv/Replies-masked.csv → Tasks-json.ipynb → assemble A/B reply pairs per prompt, assign stable pair_id (or reuse Prompt_Id), mask brands, emit Label Studio tasks → Replies_Tasks.csv (pair_id, Prompt_Id, Reply_Id, condition A/B, bot_mask, reply_text).
-Tag Book v1.docx + Tags.txt → Rules_book.ipynb → freeze tag definitions and export machine-readable rules → tagbook_v1_1.json / tagbook_v1_1.md.
-Replies_Tasks.csv + tagbook_v1_1.json → Rules_book.ipynb → apply deterministic rules to each reply (no ML), generate tag binaries/notes → reply_tags.csv and/or Logical Tags Prediction.json.
+STIMULI & TASKS
+Prompts.csv + Replies.csv / Replies-masked.csv → Tasks-json.ipynb → Replies\_Tasks.csv  \[pair\_id, Prompt\_Id, Reply\_Id, condition(A/B), bot\_mask, reply\_text]
+Tag Book v1.docx + Tags.txt → Rules\_book.ipynb → tagbook\_v1\_1.json / tagbook\_v1\_1.md  \[frozen rules]
+Replies\_Tasks.csv + tagbook\_v1\_1.json → Rules\_book.ipynb → reply\_tags.csv / Logical Tags Prediction.json  \[deterministic tags; no ML]
 
-Survey build
-Replies_Tasks.csv (+ optional reply_tags.csv only for balancing/stratification) → survey/survey_form_builder.ipynb → construct 20-item blocks per reply (PI, CSAT, HL, CMP + neutral fillers + 1 attention check), AB/BA counterbalance → survey_form_text_AB.txt, survey_form_text_BA.txt.
-survey_form_text_* + Replies_Tasks.csv → survey/make_block_map.ipynb → map Google Form item IDs → constructs → stimuli (pair_id/Reply_Id/Prompt_Id/condition); mark reverse-coded and attention items, include attention_flag and attention_key → surveyblock_map.csv.
+SURVEY BUILD
+Replies\_Tasks.csv (+ optional reply\_tags.csv) → survey\_form\_builder.ipynb → survey\_form\_text\_AB.txt / survey\_form\_text\_BA.txt  \[20 items/reply; AB/BA]
+survey\_form\_text\_\* + Replies\_Tasks.csv → survey/make\_block\_map.ipynb → surveyblock\_map.csv  \[maps item → construct; marks reverse; attention\_flag + attention\_key]
 
-Survey data → tidy scores
-Google Forms export (Chatbot Rating - Anwers bot masked.csv) + surveyblock_map.csv → src/preprocess.py (or notebooks/preprocess.ipynb) → clean, normalize participant_id and item_id, reverse-code, compute per-construct means (PI, CSAT, HL, CMP) per respondent × reply, compute attention pass using attention_key; enforce UTF-8-SIG → answers_long.csv (tidy) + answers_wide.csv.
-answers_long.csv + Replies_Tasks.csv + reply_tags.csv → src/preprocess.py → merge perceptions with tags and metadata → analysis_merged.csv.
-(Optional legacy) processed_scores.xlsx / predictions.csv → src/preprocess.py → align or deprecate into the same schema → analysis_merged.csv updated.
+SURVEY DATA → TIDY SCORES
+Google Forms CSV “Chatbot Rating – Anwers bot masked.csv” + surveyblock\_map.csv → src/preprocess.py → answers\_long.csv / answers\_wide.csv  \[clean, reverse-code, PI/CSAT/HL/CMP means per person×reply]
+answers\_long.csv + Replies\_Tasks.csv + reply\_tags.csv → src/preprocess.py → analysis\_merged.csv  \[scores + metadata + tags]
+(legacy) processed\_scores.xlsx / predictions.csv → src/preprocess.py → analysis\_merged.csv  \[aligned or deprecated]
 
-Quality & manipulation checks
-analysis_merged.csv → src/analysis.py (or notebooks/analysis.ipynb) → reliability (Cronbach’s α), item stats, attention-pass report → reliability_report.md, qc_tables.csv.
-Preferred minimal path for manipulation checks (reply-level, no respondent data needed): Replies_Tasks.csv + reply_tags.csv → src/analysis.py → A vs B differences in tag-based Politeness Index per pair_id/Prompt_Id → mc_checks.csv.
-(Alternatively, compute the same from analysis_merged.csv for convenience.)
+QUALITY & MANIPULATION CHECKS
+analysis\_merged.csv → src/analysis.py → reliability\_report.md / qc\_tables.csv  \[Cronbach’s α; item stats; attention pass]
+Replies\_Tasks.csv + reply\_tags.csv → src/analysis.py → mc\_checks.csv  \[A vs B tag-based Politeness Index per pair\_id/Prompt\_Id]
+(alt) analysis\_merged.csv → src/analysis.py → mc\_checks.csv  \[same result via merged table]
 
-Main analyses
-answers_long.csv → src/analysis.py → paired t-tests within prompt/respondent (default), Cohen’s d, 95% CIs; use Welch only for any independent-sample comparisons → ab_welch_per_prompt.csv, ab_summary_overall.csv.
-analysis_merged.csv → src/analysis.py → mixed-effects: outcome ~ condition + (1|participant_id) + (1|Prompt_Id) [+ optional tag covariates: apology/hedge/refusal±/next-step] → lme_results.txt, model_table.csv.
+MAIN ANALYSES
+answers\_long.csv → src/analysis.py → ab\_welch\_per\_prompt.csv / ab\_summary\_overall.csv  \[paired tests by default; Cohen’s d; 95% CIs]
+analysis\_merged.csv → src/analysis.py → lme\_results.txt / model\_table.csv  \[mixed-effects: outcome \~ condition + (1|participant\_id) + (1|Prompt\_Id) ± tag covariates]
 
-Figures & reporting
-ab_summary_overall.csv + mc_checks.csv → src/analysis.py → bar charts with CIs for PI, CSAT, HL, CMP; tag-by-effect exploratory plot → figures/.png.
-analysis_merged.csv → dashboard.py (Streamlit) → minimal drill-down (prompt → replies → scores/tags) → app script.
-tagbook_v1_1.md + survey_form_text_ + reliability_report.md + ab_summary_overall.csv → docs assembly → paper_notes.md, appendix/.
+FIGURES & REPORTING
+ab\_summary\_overall.csv + mc\_checks.csv → src/analysis.py → figures/*.png  \[bars with CIs for PI/CSAT/HL/CMP; tag-effect plot]
+analysis\_merged.csv → dashboard.py → Streamlit app  \[prompt → replies → tags/scores]
+tagbook\_v1\_1.md + survey\_form\_text\_* + reliability\_report.md + ab\_summary\_overall.csv → docs → paper\_notes.md / appendix/
 
-Housekeeping & notes
-Encoding: assume UTF-8-SIG for CSV I/O; for Windows-encoded sources (Replies.csv/Replies-masked.csv), load with fallback (latin-1) then re-save UTF-8-SIG.
-Masking: keep bot_mask as A/B end-to-end; never expose true brand strings in survey or outputs.
-Balance: enforce AB/BA quotas in survey; track in preprocess (drop or weight if imbalanced).
-Provenance: each output path is written by a single script/notebook; prefer deterministic seeds and frozen tagbook v1.1.
+HOUSEKEEPING
+Encoding: read/write CSV as UTF-8-SIG; if Windows-encoded, ingest via latin-1 then re-save UTF-8-SIG.
+Masking: keep bot\_mask as A/B throughout; never reveal true brands.
+Balance: enforce AB/BA quotas; track and correct in preprocessing.
+Provenance: one script → one output; deterministic seeds; tagbook v1.1 frozen.
