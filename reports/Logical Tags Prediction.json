@@ -1,0 +1,2542 @@
+
+[
+  {
+    "data": {
+      "reply_text": "Could you please provide more details about the nature of your question? I'll do my best to assist you."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T03_PositiveFlex",
+                "T04_MitigationHedge"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Thank you for choosing Temu! How can I help you today? If you're having an issue, please select the option that best matches your concern so we can assist right away."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T01_EmpathyGratitude",
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Open Your Orders and select the item, then choose “Problem with order” to request a replacement or refund per policy."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "We're sorry about the mix-up. Please tap Select order to confirm the affected order; we'll guide you to a free replacement or refund as quickly as possible."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T02_Apology",
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "If you receive a damaged or defective item, request a free replacement or a full refund through Your Orders. For bulky items from a third?party seller, you can request a home pickup."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "We sincerely regret the inconvenience. Please confirm the order you're referring to via Select order; we'll arrange a replacement or refund immediately after verification."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T02_Apology",
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Check the shipment status in Your Orders. If it shows delivered but you didn't receive it, select “Item not received” to start a claim."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "We understand you haven't received your package and we're here to help. Click Select order so we can identify the correct parcel and investigate with the carrier."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T01_EmpathyGratitude",
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Track your order in Your Orders for the latest delivery estimate. If a delivery option appears, follow the prompts or contact the carrier."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "We've marked your issue as urgent. I'll look into the logistics to expedite it. Please Select order so we can push the right shipment and keep you updated."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T03_PositiveFlex",
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "I'm sorry to hear you've had a frustrating experience. If your package never arrived or the item is faulty, you can request a refund through Your Orders or contact customer service for further assistance."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T02_Apology",
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "We apologize for the inconvenience and we're committed to helping. Please Select order to start the refund quickly—we'll address your concerns thoughtfully."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T02_Apology",
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Amazon typically offers a 30?day return period, which may vary by category. For exceptions, please contact customer service with your specific situation."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T04_MitigationHedge"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "We're sorry for the trouble and understand your wish to return. Please confirm the order via Select order so we can review eligibility and do our best to help."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T02_Apology",
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "If available, choose Change delivery on the order's shipment page or contact the carrier. Some shipments can't be changed once processing begins."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T06_RefusalMinus",
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "If your order isn't packed yet, go to Your Orders, open the order, tap Edit to update the address/phone/ZIP. If it's already packed or shipped, we'll help contact the carrier to request a reroute."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "You can cancel from Your Orders if the item hasn't entered the shipping process yet. If cancellation isn't available, you can refuse delivery or return the item."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Open Your Orders, choose the order, and tap Cancel items. If packing has started, we'll try our best or help you return it for a fast refund."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T03_PositiveFlex",
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "If upgrade options are available, you'll see them at checkout or under Delivery options in Your Orders."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "I know you're eager to receive it. To upgrade, sign in, go to Your orders, select the order, tap Need to change shipping speed (if shown), then submit. You'll be redirected to pay for express delivery."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T01_EmpathyGratitude",
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Return eligibility depends on item category and timing. Start a return in Your Orders; if an exception is possible, the system or support will advise."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "We're sorry for the inconvenience. Please Select order so we can review the timeline and try to find the best solution for you."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T02_Apology",
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Start a return or replacement from Your Orders and select the desired size or color, if available."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Happy to help with an exchange. Please Select order and choose the new size/color; we'll process it as soon as the return is confirmed."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Open Your Orders, select the item, and choose “Wrong or damaged packaging/Partial refund” and upload photos. We'll review per policy."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Sorry about the packaging. Select order and upload a quick photo; we'll review and issue a partial refund or other solution where eligible."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T02_Apology",
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Price?match isn't available for most items. Check the product's policy and return options in Your Orders if eligible."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Thanks for checking. Please share the order via Select order; we'll review the purchase window and advise on available options."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T01_EmpathyGratitude",
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "At checkout, confirm code eligibility and expiration. If it still won't apply, try a different payment method or contact support."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "We can help apply your code. Please Select order (or cart) details and the promo code text; we'll check eligibility and help you apply it."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Verify billing details, available balance, and 3?D Secure/SCA prompts. Try another payment method or update your default payment in Your Account."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Let's fix this together. Check card details, balance, and bank authorization. If it still fails, Select order and we'll help with alternate payment options."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Use account recovery to verify your identity, then reset your password. If issues persist, contact support for verification."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "We're here to help you back in. Use Account recovery to verify your identity; if you need assistance, Select order/account and we'll guide the next steps."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T01_EmpathyGratitude",
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "If the order hasn't shipped, cancel in Your Orders and place a new order. If shipped, contact the carrier to request a reroute, if available."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "I understand—that's stressful. If not shipped, cancel in Your orders and reorder to the correct address. If shipped, we'll help you contact the carrier to try a reroute."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T01_EmpathyGratitude",
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Open Subscriptions, select the plan, and choose Cancel. A confirmation will appear in your account."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "We can take care of that. Go to Subscriptions, tap the plan, choose Cancel. We'll confirm and ensure no further charges."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "I'm afraid I can't respond to that request. I'd be happy to help you find what you're looking for if you have any other questions."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T06_RefusalMinus"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "We truly understand your frustration and apologize for any inconvenience. Could you briefly describe the issue or Select order? We'll do everything we can to assist."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T02_Apology",
+                "T05_GuidancePolicy",
+                "T04_MitigationHedge"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Shipping availability depends on the item and address. Please check the product page for options to your country."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "We do offer shipping to many countries—please share your location so I can confirm and let you know the cost."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Some items ship separately due to stock location. You can view each tracking number in Your Orders."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "It looks like your order was split—don't worry, I'll check both tracking numbers and let you know when each will arrive."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T04_MitigationHedge"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "If the item is under warranty, you can start a claim from Your Orders."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Sorry to hear the product isn't working—please send your order number so we can help with a warranty claim."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T02_Apology"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Gift receipts can be added before dispatch in the order settings."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Sure, I can help hide the price—could you give me the order number so I can add a gift receipt?"
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T04_MitigationHedge"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Store credit can be selected during the return process if available."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Yes, I can issue store credit—please provide your order details so we can start."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Estimated arrival for backordered items is shown on the product page."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "I see it's on backorder—let me check the updated arrival date for you."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Please report duplicate charges via the Payment Issues section in Your Orders."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "That's unusual—share your payment proof and we'll fix the duplicate charge."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "VAT invoices can be downloaded from the order details page."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Of course—please open your order and select Invoice; I can guide you if needed."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Customs fee reimbursement depends on our policy for your order."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "I'm sorry you had to pay extra fees—send me the receipt and I'll see if we can reimburse you."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T02_Apology"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Sizing information is available in the Size Chart on the product page."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "I'd be happy to help you find the right size—could you share your measurements?"
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T04_MitigationHedge"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Gift wrap can be added for eligible items in Your Orders."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Yes! We can add gift wrap—please provide the order ID so I can check."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "You can cancel or keep your preorder from Your Orders."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "I understand the delay is frustrating—do you want me to cancel the preorder or keep it?"
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T01_EmpathyGratitude"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Please check all shipments in Your Orders for the missing item."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Let me track the missing item for you—could you confirm the order ID?"
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T04_MitigationHedge"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Returns can be cancelled if processing hasn't started."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "No problem—tell me the return reference so I can cancel it for you."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Payment methods can't be changed after placing the order."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T06_RefusalMinus"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "If the order hasn't shipped, we can cancel and you can reorder with the new payment method."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Store credit can be applied during checkout."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Sure! When you're at checkout, choose store credit and it'll be applied."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Missing loyalty points can be reported from Your Orders."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "I can add your points—please give me the order ID so I can check."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Address changes in transit must be requested with the carrier."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "I can try to reroute it—please share the tracking number."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Pickup location changes depend on carrier support."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Yes, I can help—tell me your tracking number and preferred location."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Signature requirements are set by the carrier and may not be removable."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T04_MitigationHedge"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "I'll check if we can remove the signature—please share your order details."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "We'll inspect the returned item before issuing a refund."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Sorry about the damage during return—please send me photos so I can help."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T02_Apology"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Return eligibility with a broken seal depends on item type."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "I'll see if we can accept the return—could you tell me the product type?"
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T04_MitigationHedge"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Subscription pause is available for certain plans in your account settings."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Sure—we can pause your subscription—how long would you like it paused?"
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Expired download links can be resent from Your Orders."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "I can send you a fresh link right away—could you confirm the order?"
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T04_MitigationHedge"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "License issues can be reported through Your Orders."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Let's get that fixed—send me the license key and error message."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Duplicate orders can be cancelled if not yet shipped."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "I'll cancel the duplicate for you—what's the order number?"
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Personalization issues can be reported from the order details."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "I'm sorry for the error—please send a photo and we'll make it right."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T02_Apology"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Eco-friendly packaging is offered for eligible items in order preferences."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "We'll do our best to use eco-friendly packaging—can you share the order ID?"
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T03_PositiveFlex"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Billing currency is shown in your order payment details."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "I can explain the charge—please share your payment receipt."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "VAT invoices with company details can be generated in Your Orders."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Sure—send me your VAT number and I'll update the invoice."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Bulk discounts can be requested through business sales."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Yes—we can check for a discount—how many units do you need?"
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Missed return pickups can be rescheduled from Your Orders."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Let's arrange a new pickup—what's your order number?"
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Partial refunds for wrong items depend on policy."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Sorry for the mix-up—please send photos so I can help."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T02_Apology"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Subscription refunds depend on plan terms and timing."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "I'll check your subscription—could you give me the plan name?"
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T04_MitigationHedge"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Student discounts require verification on the relevant page."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Happy to help—please share your student ID or email."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Accessibility support is available via our help center."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "T05_GuidancePolicy"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Of course—please tell me what accessibility help you need."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Available support languages are listed in account settings."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Yes—we'll try to help in your language—what's your preference?"
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Packaging notes can be added before shipping in order settings."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "I'll make sure the note is added—what allergy should we mention?"
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Delivery instructions can be added for orders not yet shipped."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Sure—what instructions should I pass to the driver?"
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Gift messages can be edited before packing starts."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "reply_text": "Yes—please send me the updated message and I'll try to change it in time."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "reply_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "skip/unclear"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

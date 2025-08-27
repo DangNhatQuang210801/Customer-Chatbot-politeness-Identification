@@ -1,0 +1,748 @@
+[
+  {
+    "id": 1,
+    "labels": [
+      "T03_PositiveFlex",
+      "T04_MitigationHedge"
+    ]
+  },
+  {
+    "id": 2,
+    "labels": [
+      "T01_EmpathyGratitude",
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 3,
+    "labels": [
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 4,
+    "labels": [
+      "T02_Apology",
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 5,
+    "labels": [
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 6,
+    "labels": [
+      "T02_Apology",
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 7,
+    "labels": [
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 8,
+    "labels": [
+      "T01_EmpathyGratitude",
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 9,
+    "labels": [
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 10,
+    "labels": [
+      "T03_PositiveFlex",
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 11,
+    "labels": [
+      "T01_EmpathyGratitude",
+      "T02_Apology",
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 12,
+    "labels": [
+      "T02_Apology",
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 13,
+    "labels": [
+      "T04_MitigationHedge"
+    ]
+  },
+  {
+    "id": 14,
+    "labels": [
+      "T02_Apology",
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 15,
+    "labels": [
+      "T05_GuidancePolicy",
+      "T06_RefusalMinus"
+    ]
+  },
+  {
+    "id": 16,
+    "labels": [
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 17,
+    "labels": [
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 18,
+    "labels": [
+      "T03_PositiveFlex",
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 19,
+    "labels": [
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 20,
+    "labels": [
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 21,
+    "labels": [
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 22,
+    "labels": [
+      "T02_Apology",
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 23,
+    "labels": [
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 24,
+    "labels": [
+      "T03_PositiveFlex",
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 25,
+    "labels": [
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 26,
+    "labels": [
+      "T02_Apology",
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 27,
+    "labels": [
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 28,
+    "labels": [
+      "T01_EmpathyGratitude",
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 29,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 30,
+    "labels": [
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 31,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 32,
+    "labels": [
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 33,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 34,
+    "labels": [
+      "T01_EmpathyGratitude",
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 35,
+    "labels": [
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 36,
+    "labels": [
+      "T01_EmpathyGratitude",
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 37,
+    "labels": [
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 38,
+    "labels": [
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 39,
+    "labels": [
+      "T03_PositiveFlex",
+      "T06_RefusalMinus"
+    ]
+  },
+  {
+    "id": 40,
+    "labels": [
+      "T01_EmpathyGratitude",
+      "T02_Apology",
+      "T04_MitigationHedge",
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 41,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 42,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 43,
+    "labels": [
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 44,
+    "labels": [
+      "T04_MitigationHedge"
+    ]
+  },
+  {
+    "id": 45,
+    "labels": [
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 46,
+    "labels": [
+      "T02_Apology"
+    ]
+  },
+  {
+    "id": 47,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 48,
+    "labels": [
+      "T03_PositiveFlex",
+      "T04_MitigationHedge"
+    ]
+  },
+  {
+    "id": 49,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 50,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 51,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 52,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 53,
+    "labels": [
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 54,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 55,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 56,
+    "labels": [
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 57,
+    "labels": [
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 58,
+    "labels": [
+      "T02_Apology"
+    ]
+  },
+  {
+    "id": 59,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 60,
+    "labels": [
+      "T03_PositiveFlex",
+      "T04_MitigationHedge"
+    ]
+  },
+  {
+    "id": 61,
+    "labels": [
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 62,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 63,
+    "labels": [
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 64,
+    "labels": [
+      "T01_EmpathyGratitude"
+    ]
+  },
+  {
+    "id": 65,
+    "labels": [
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 66,
+    "labels": [
+      "T04_MitigationHedge"
+    ]
+  },
+  {
+    "id": 67,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 68,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 69,
+    "labels": [
+      "T06_RefusalMinus"
+    ]
+  },
+  {
+    "id": 70,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 71,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 72,
+    "labels": [
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 73,
+    "labels": [
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 74,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 75,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 76,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 77,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 78,
+    "labels": [
+      "T03_PositiveFlex"
+    ]
+  },
+  {
+    "id": 79,
+    "labels": [
+      "T04_MitigationHedge"
+    ]
+  },
+  {
+    "id": 80,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 81,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 82,
+    "labels": [
+      "T02_Apology",
+      "T03_PositiveFlex"
+    ]
+  },
+  {
+    "id": 83,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 84,
+    "labels": [
+      "T04_MitigationHedge"
+    ]
+  },
+  {
+    "id": 85,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 86,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 87,
+    "labels": [
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 88,
+    "labels": [
+      "T04_MitigationHedge"
+    ]
+  },
+  {
+    "id": 89,
+    "labels": [
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 90,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 91,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 92,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 93,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 94,
+    "labels": [
+      "T02_Apology"
+    ]
+  },
+  {
+    "id": 95,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 96,
+    "labels": [
+      "T03_PositiveFlex"
+    ]
+  },
+  {
+    "id": 97,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 98,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 99,
+    "labels": [
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 100,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 101,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 102,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 103,
+    "labels": [
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 104,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 105,
+    "labels": [
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 106,
+    "labels": [
+      "T02_Apology",
+      "T03_PositiveFlex"
+    ]
+  },
+  {
+    "id": 107,
+    "labels": [
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 108,
+    "labels": [
+      "T04_MitigationHedge"
+    ]
+  },
+  {
+    "id": 109,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 110,
+    "labels": [
+      "T03_PositiveFlex"
+    ]
+  },
+  {
+    "id": 111,
+    "labels": [
+      "T05_GuidancePolicy"
+    ]
+  },
+  {
+    "id": 112,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 113,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 114,
+    "labels": [
+      "T03_PositiveFlex"
+    ]
+  },
+  {
+    "id": 115,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 116,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 117,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 118,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 119,
+    "labels": [
+      "skip/unclear"
+    ]
+  },
+  {
+    "id": 120,
+    "labels": [
+      "T03_PositiveFlex"
+    ]
+  }
+]

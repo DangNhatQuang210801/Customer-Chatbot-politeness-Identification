@@ -1,0 +1,33 @@
+Here’s the snapshot (what exists → % done):
+
+Stimuli & masking (Replies_Tasks.csv exists) → 100%
+
+Tagbook freeze + canonical tags (have Tag Book v1, JSON predictions; need tagbook_v1_1.{md,json} + reply_tags.csv) → 75%
+
+Survey build (block map exists; AB/BA texts + attention_key verification pending) → 60%
+
+Preprocess & scoring (answers_long.csv, analysis_merged.csv done) → 95%
+
+QC & manipulation (reliability_report.md, qc_tables.csv, mc_checks.csv) → 100%
+
+Main A/B stats (analysis_summary.csv, analysis_per_prompt.csv done; align to ab_* naming optional) → 85%
+
+Mixed-effects (not run yet) → 20%
+
+Figures (CSAT/PI/HL/CMP bars + tag-effect) → 10%
+
+Dashboard (Streamlit) → 0–10%
+
+Repo skeleton + README (text drafted but not saved; structure to finalize) → 30%
+
+Presentation deck (script outline provided; needs numbers/figures dropped in) → 40%
+
+Final report (APA scaffold provided; needs results inserted + figures/tables) → 30%
+
+How I computed 37%: I weighted core pipeline (data+analysis+figures+repo) at ~70% of the project and comms (slides+report) at ~30%.
+
+Core pipeline ≈ 75% done → contributes 0.7 × 0.75 = 0.525
+
+Comms ≈ 35% done → contributes 0.3 × 0.35 = 0.105
+
+Total ≈ 0.525 + 0.105 = 0.63 → 63% done ⇒ 37% left.

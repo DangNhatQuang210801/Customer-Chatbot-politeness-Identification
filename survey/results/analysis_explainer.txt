@@ -1,0 +1,66 @@
+A/B Politeness Study — What this analysis does and why it matters
+====================================================================
+
+1) Why we do this
+We want to test a simple claim: “More polite and empathic bot replies lead to higher customer satisfaction (CSAT) and better compliance.”
+We compare two masked chatbots (A and B). We score each reply on four things:
+- PI = Politeness Index
+- CSAT = Customer Satisfaction
+- HL = Helpfulness/Clarity
+- CMP = Compliance (would the user follow the advice)
+
+2) What it means for the project
+These results tell us whether A or B performs better on each metric. If the average difference (B − A) is:
+- positive → B scores higher than A
+- negative → B scores lower than A
+This links directly to the final goal: decide if polite language (and which bot) actually moves CSAT and compliance in practice.
+
+3) What the numbers mean
+- mean_delta: average of (B − A) across prompts for a given metric.
+- sem: uncertainty of that average (smaller is more precise).
+- t, p: statistical test of whether mean_delta differs from 0.
+  If p < .05, we treat the difference as reliable in this sample.
+- n: number of prompts included.
+In per-prompt files you’ll also see:
+- nA, nB: number of participant ratings in A and B for that prompt.
+- meanA, meanB: average scores for that prompt and metric.
+- diff: meanB − meanA for that prompt (direction of the effect).
+- d: Cohen’s d (standardized effect size).
+- ci_low, ci_high: 95% confidence interval for the difference.
+
+4) How to use the graph
+- Each bar = mean_delta (B − A) for one metric.
+- Error bars = SEM (uncertainty). The dashed line at 0 is “no difference”.
+- If a bar is clearly below 0, B is worse than A on that metric; above 0 means B is better.
+- Always confirm with the p-value in the summary table before drawing conclusions.
+
+5) What each file does (in order)
+Raw and mapping
+- surveyblock_map.csv: maps each survey question to a construct (PI/CSAT/HL/CMP), marks reverse-scored, fillers, attention checks.
+
+Preprocess outputs
+- answers_long.csv: one row per participant × question, with the construct label and cleaned score.
+- processed_scores.csv: averages by Prompt_Id × condition (A or B) for the four metrics.
+- processed_scores.xlsx: same as above but easier to eyeball (optional).
+
+Analysis notebooks
+- preprocess.ipynb: builds answers_long.csv and processed_scores.csv from the raw survey + block map.
+- analysis.ipynb: runs the A vs B analysis and produces the tables and the graph.
+
+Analysis results
+- ab_welch_per_prompt.csv: per-prompt A vs B using Welch tests (participant-level). Use this as the main per-prompt evidence.
+- ab_summary_overall.csv: overall mean_delta and tests across prompts (final headline numbers).
+- analysis_per_prompt.csv: quick deltas (B − A) computed from processed_scores. Useful for a quick QA check.
+- analysis_summary.csv: quick overall summary from those deltas. Cross-check; ab_* files are preferred for reporting.
+
+6) Why we need this process
+- It keeps the study masked and fair (A vs B).
+- It cleans the data (reverse-scoring, removing fillers, attention checks).
+- It aggregates consistently (Prompt × Condition) and tests differences properly.
+- It gives one clear set of numbers and a simple graph that answer the thesis question:
+  “Does more polite/empathic language increase CSAT and compliance?”
+
+How to report quickly
+- Quote ab_summary_overall.csv for the final differences and p-values.
+- Show the bar chart for a visual: which metrics shift and by how much.
+- If reviewers ask about specific prompts, open ab_welch_per_prompt.csv.

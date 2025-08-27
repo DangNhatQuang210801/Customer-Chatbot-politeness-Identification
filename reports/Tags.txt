@@ -1,0 +1,11 @@
+<View>
+  <Text name="reply_text" value="$reply_text"/>
+  <Choices name="label" toName="reply_text" choice="multiple" layout="vertical">
+    <Choice value="T01_EmpathyGratitude"/>
+    <Choice value="T02_Apology"/>
+    <Choice value="T03_PositiveFlex"/>
+    <Choice value="T04_MitigationHedge"/>
+    <Choice value="T05_RefusalMinus"/>
+    <Choice value="T06_GeneralAnswer"/>
+  </Choices>
+</View>

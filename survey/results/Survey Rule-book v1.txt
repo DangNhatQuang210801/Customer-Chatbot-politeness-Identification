@@ -1,0 +1,98 @@
+Survey Rulebook v2 – Chatbot Politeness Project
+
+In this project, the survey scores serve as the main link between linguistic politeness strategies and user experience outcomes. CSAT captures overall customer satisfaction, PI directly measures perceived politeness, HL tests whether politeness also improves clarity, and CMP indicates whether polite replies make users more likely to comply with instructions. The filler items disguise the true focus to avoid bias, while the attention check ensures data quality. Together, these measures make the survey meaningful for our goals, because they allow us to test whether polite and empathic chatbot language improves not only perception but also practical outcomes such as satisfaction and compliance.
+
+By comparing these scores across A/B pairs within the same participant, the survey directly tests whether polite and empathic language makes chatbot replies more effective, aligning with our project goal of linking politeness strategies to customer satisfaction and compliance.
+
+1. Purpose
+This survey tests whether polite and empathic language in chatbot by comparing 2 chatbots:
+- CSAT -> Customer Satisfaction (“I am satisfied with this reply”)
+- PI -> Politeness Index (“The reply sounds polite and respectful”)
+- HL -> Helpfulness / clarity of next step (“I understand what to do next”)
+- CMP -> Compliance intention (“I would follow this reply’s instructions”)
+- FILLER -> Neutral items to disguise survey purpose
+- ATT_CHECK -> Attention check to filter careless responses
+
+2. Core Rules for Survey Design
+2.1 Reply Selection
+- Always use reply pairs for the same customer prompt.
+  * Reply A = less polite (short, procedural, no apology/empathy)
+  * Reply B = more polite (apology, empathy, guidance)
+- Balance: equal numbers of A and B items per participant.
+- Length-match: replies should be roughly equal length (±15%).
+
+2.2 Question Design
+- Scale: 1–5 Likert (1 = Completely disagree, 5 = Completely agree).
+- Each reply is rated on multiple constructs (CSAT, PI, HL, CMP).
+- Prefix each question with A/ or B/ to separate chatbot replies in CSV.
+- Do not use the word “politeness” in the survey introduction.
+
+2.3 Neutral Fillers and Attention Check
+- Include at least one reverse-coded [R] item, e.g. “The reply feels curt or blaming.” (Reverse to measure PI).
+- Include one attention-check, e.g. “To show you are paying attention, please select 5.”
+- Include 1–2 filler questions, e.g. “I often shop online.”
+
+3. Survey Flow
+Step 1: Introduction (neutral)
+Example:  
+“You will read several short replies from customer service chatbots. After each, rate your impressions on a 1–5 scale. There are no right or wrong answers. Your responses are anonymous and used only for research.”
+
+Step 2: Section per Pair
+- Show Reply A (description) -> ask its questions (CSAT, PI, HL, CMP, filler if used).
+- Show Reply B (description) -> ask its questions.
+- Counterbalance order (half AB, half BA).
+
+Step 3: Export
+- Collect responses in Google Sheets -> Download CSV.
+- Keep A/ and B/ prefixes in column headers.
+
+4. Scoring
+4.1 Reverse Coding
+- For reverse-coded items [R], compute:  
+  new_score = 6 – old_score  
+Example: if answer = 2 -> new_score = 4.
+
+4.2 Indices
+- PI (Politeness Index) = mean of all PI items (including reversed).
+- CSAT = mean of all CSAT items.
+- HL = mean of all helpfulness/clarity items.
+- CMP = mean of all compliance items.
+
+4.3 Paired Analysis
+Why paired analysis:
+- The survey uses a within-subjects design: each participant rates both Reply A (less polite) and Reply B (more polite).
+- By comparing A vs B within the same participant, individual response styles (e.g., some people always giving 5s or always being harsh) are canceled out.
+- This makes the politeness effect clearer and reduces noise.
+
+- For each participant, compute difference scores:  
+  ΔPI   = PI_B – PI_A  
+  ΔCSAT = CSAT_B – CSAT_A  
+  ΔHL   = HL_B – HL_A  
+  ΔCMP  = CMP_B – CMP_A
+- Test with paired t-tests or mixed-effects models (fixed = condition, random = participant + prompt).
+
+Interpret results in discussion
+
+Example:
+
+ΔPI > 0 → polite replies were seen as more polite 
+ΔCSAT > 0 → polite replies increase satisfaction 
+ΔHL ≈ 0 → politeness does not improve clarity (cosmetic effect)
+ΔCMP > 0 → polite replies make users more likely to follow instructions 
+
+That pattern would support: “Politeness matters not only for perception but also for compliance, even if clarity is unchanged.”
+
+Reverse-coded [R] item: “The reply feels curt or blaming.”
+
+If a participant selects 5 = Completely agree, they are actually saying the reply is impolite.
+
+To align it with the politeness scale (where higher = more polite), we reverse the score.
+
+5. Rationale
+- Paired replies: isolate effect of politeness within same context.
+- Likert 1–5: simple, quick, consistent with CSAT scales.
+- A/B prefixes: make raw CSV scoring transparent.
+- Reverse-coded: detect careless responses, reduce bias.
+- Attention check: ensures reliable data.
+- Fillers: disguise purpose, reduce demand characteristics.
+- Indices: combine multiple items for more reliable measures.

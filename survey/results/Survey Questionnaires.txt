@@ -1,0 +1,49 @@
+Pair P1 (Not received / delivery investigation)
+
+P1A/PI A/ The reply sounds polite and respectful.
+
+P1A/HL A/ I understand what I should do next.
+
+P1B/PI B/ The reply sounds polite and respectful.
+
+P1B/CSAT B/ Overall, I am satisfied with this reply.
+
+Pair P2 (Damaged item / refund vs replace)
+
+P2A/PI A/ The reply acknowledges my situation appropriately.
+
+P2A/CMP A/ I would follow the instructions in this reply.
+
+P2B/PI B/ The reply acknowledges my situation appropriately.
+
+P2B/CSAT B/ Overall, I am satisfied with this reply.
+
+Pair P3 (Warranty / claim)
+
+P3A/PI A/ The reply uses polite wording (e.g., please, could).
+
+P3A/HL A/ The next step is clear to me.
+
+P3B/PI B/ The reply uses polite wording (e.g., please, could).
+
+P3B/CMP B/ I would follow the instructions in this reply.
+
+Pair P4 (Policy limit / partial refusal)
+
+P4A/PI A/ Even when setting limits, the tone feels fair.
+
+P4A/RC A/ The reply feels curt or blaming. [R]
+
+P4B/PI B/ Even when setting limits, the tone feels fair.
+
+P4B/CSAT B/ Overall, I am satisfied with this reply.
+
+Pair P5 (Address change / process guidance)
+
+P5A/PI A/ The agent’s tone is courteous.
+
+P5A/CMP A/ I would do what the reply suggests.
+
+P5B/PI B/ The agent’s tone is courteous.
+
+P5B/HL B/ The next step is clear to me.

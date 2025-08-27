@@ -1,0 +1,40 @@
+Slide 1: What this project is
+
+We compare two chatbots (masked as Chatbot A and Chatbot B).
+
+We want to see if more polite language makes people happier and more willing to follow instructions.
+
+Measures we track: Politeness (PI), Satisfaction (CSAT), Helpfulness/Clarity (HL), and Willingness to follow (CMP). Each is rated 1–5 and averaged.
+
+Slide 2: How the pipeline works (in one line)
+
+Stimuli (what people read)
+Prompts.csv + Replies.csv/Replies-masked.csv → Tasks-json.ipynb → Replies_Tasks.csv
+Plain: pair each prompt with two masked replies (A/B) and give the pair a stable id.
+
+Rules & tags (what “polite” means)
+Tag Book v1.docx + Tags.txt → Rules_book.ipynb → tagbook_v1_1 (frozen)
+Replies_Tasks.csv + tagbook_v1_1 → Rules_book.ipynb → reply_tags.csv
+Plain: freeze simple rules (apology, empathy, hedge, etc.) and tag each reply.
+
+Survey (collect human judgments)
+Replies_Tasks.csv (+ optional reply_tags.csv for balance) → survey_form_builder.ipynb → survey_form_text_AB/BA.txt
+survey_form_text_* → Google Forms → Chatbot Rating – Anwers bot masked.csv
+Plain: build A→B / B→A forms with 20 quick items per reply; collect responses.
+
+Scoring & merge (turn clicks into numbers)
+Forms CSV + surveyblock_map.csv → src/preprocess.py → answers_long.csv / answers_wide.csv
+answers_long.csv + Replies_Tasks.csv + reply_tags.csv → src/preprocess.py → analysis_merged.csv
+Plain: compute PI, CSAT, HL, CMP per person×reply; link scores to reply metadata and tags.
+
+QC & manipulation check (sanity before results)
+analysis_merged.csv → src/analysis.py → reliability_report.md, qc_tables.csv
+Replies_Tasks.csv + reply_tags.csv → src/analysis.py → mc_checks.csv
+Plain: verify items hang together and A vs B actually differ on tag-based politeness.
+
+Analysis & communication (what changed and by how much)
+answers_long.csv → src/analysis.py → ab_welch_per_prompt.csv, ab_summary_overall.csv
+analysis_merged.csv → src/analysis.py → lme_results.txt, model_table.csv
+ab_summary_overall.csv + mc_checks.csv → src/analysis.py → figures/*.png
+Plain: run paired tests and mixed-effects, then show clean charts; optional mini dashboard.
+

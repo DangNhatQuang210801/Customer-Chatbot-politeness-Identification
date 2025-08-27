@@ -1,0 +1,1442 @@
+[
+  {
+    "id": 1,
+    "data": {
+      "reply_text": "Could you please provide more details about the nature of your question? I'll do my best to assist you.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P01",
+      "Reply_Id": "R01_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 2,
+    "data": {
+      "reply_text": "Thank you for choosing Temu! How can I help you today? If you're having an issue, please select the option that best matches your concern so we can assist right away.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P01",
+      "Reply_Id": "R01_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 3,
+    "data": {
+      "reply_text": "Open Your Orders and select the item, then choose “Problem with order” to request a replacement or refund per policy.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P02",
+      "Reply_Id": "R02_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 4,
+    "data": {
+      "reply_text": "We're sorry about the mix-up. Please tap Select order to confirm the affected order; we'll guide you to a free replacement or refund as quickly as possible.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P02",
+      "Reply_Id": "R02_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 5,
+    "data": {
+      "reply_text": "If you receive a damaged or defective item, request a free replacement or a full refund through Your Orders. For bulky items from a third?party seller, you can request a home pickup.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P03",
+      "Reply_Id": "R03_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 6,
+    "data": {
+      "reply_text": "We sincerely regret the inconvenience. Please confirm the order you're referring to via Select order; we'll arrange a replacement or refund immediately after verification.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P03",
+      "Reply_Id": "R03_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 7,
+    "data": {
+      "reply_text": "Check the shipment status in Your Orders. If it shows delivered but you didn't receive it, select “Item not received” to start a claim.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P04",
+      "Reply_Id": "R04_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 8,
+    "data": {
+      "reply_text": "We understand you haven't received your package and we're here to help. Click Select order so we can identify the correct parcel and investigate with the carrier.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P04",
+      "Reply_Id": "R04_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 9,
+    "data": {
+      "reply_text": "Track your order in Your Orders for the latest delivery estimate. If a delivery option appears, follow the prompts or contact the carrier.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P05",
+      "Reply_Id": "R05_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 10,
+    "data": {
+      "reply_text": "We've marked your issue as urgent. I'll look into the logistics to expedite it. Please Select order so we can push the right shipment and keep you updated.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P05",
+      "Reply_Id": "R05_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 11,
+    "data": {
+      "reply_text": "I'm sorry to hear you've had a frustrating experience. If your package never arrived or the item is faulty, you can request a refund through Your Orders or contact customer service for further assistance.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P06",
+      "Reply_Id": "R06_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 12,
+    "data": {
+      "reply_text": "We apologize for the inconvenience and we're committed to helping. Please Select order to start the refund quickly, we'll address your concerns thoughtfully.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P06",
+      "Reply_Id": "R06_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 13,
+    "data": {
+      "reply_text": "Amazon typically offers a 30?day return period, which may vary by category. For exceptions, please contact customer service with your specific situation.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P07",
+      "Reply_Id": "R07_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 14,
+    "data": {
+      "reply_text": "We're sorry for the trouble and understand your wish to return. Please confirm the order via Select order so we can review eligibility and do our best to help.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P07",
+      "Reply_Id": "R07_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 15,
+    "data": {
+      "reply_text": "If available, choose Change delivery on the order's shipment page or contact the carrier. Some shipments can't be changed once processing begins.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P08",
+      "Reply_Id": "R08_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 16,
+    "data": {
+      "reply_text": "If your order isn't packed yet, go to Your Orders, open the order, tap Edit to update the address/phone/ZIP. If it's already packed or shipped, we'll help contact the carrier to request a reroute.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P08",
+      "Reply_Id": "R08_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 17,
+    "data": {
+      "reply_text": "You can cancel from Your Orders if the item hasn't entered the shipping process yet. If cancellation isn't available, you can refuse delivery or return the item.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P09",
+      "Reply_Id": "R09_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 18,
+    "data": {
+      "reply_text": "Open Your Orders, choose the order, and tap Cancel items. If packing has started, we'll try our best or help you return it for a fast refund.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P09",
+      "Reply_Id": "R09_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 19,
+    "data": {
+      "reply_text": "If upgrade options are available, you'll see them at checkout or under Delivery options in Your Orders.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P10",
+      "Reply_Id": "R10_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 20,
+    "data": {
+      "reply_text": "I know you're eager to receive it. To upgrade, sign in, go to Your orders, select the order, tap Need to change shipping speed (if shown), then submit. You'll be redirected to pay for express delivery.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P10",
+      "Reply_Id": "R10_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 21,
+    "data": {
+      "reply_text": "Return eligibility depends on item category and timing. Start a return in Your Orders; if an exception is possible, the system or support will advise.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P11",
+      "Reply_Id": "R11_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 22,
+    "data": {
+      "reply_text": "We're sorry for the inconvenience. Please Select order so we can review the timeline and try to find the best solution for you.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P11",
+      "Reply_Id": "R11_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 23,
+    "data": {
+      "reply_text": "Start a return or replacement from Your Orders and select the desired size or color, if available.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P12",
+      "Reply_Id": "R12_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 24,
+    "data": {
+      "reply_text": "Happy to help with an exchange. Please Select order and choose the new size/color; we'll process it as soon as the return is confirmed.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P12",
+      "Reply_Id": "R12_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 25,
+    "data": {
+      "reply_text": "Open Your Orders, select the item, and choose “Wrong or damaged packaging/Partial refund” and upload photos. We'll review per policy.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P13",
+      "Reply_Id": "R13_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 26,
+    "data": {
+      "reply_text": "Sorry about the packaging. Select order and upload a quick photo; we'll review and issue a partial refund or other solution where eligible.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P13",
+      "Reply_Id": "R13_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 27,
+    "data": {
+      "reply_text": "Price?match isn't available for most items. Check the product's policy and return options in Your Orders if eligible.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P14",
+      "Reply_Id": "R14_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 28,
+    "data": {
+      "reply_text": "Thanks for checking. Please share the order via Select order; we'll review the purchase window and advise on available options.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P14",
+      "Reply_Id": "R14_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 29,
+    "data": {
+      "reply_text": "At checkout, confirm code eligibility and expiration. If it still won't apply, try a different payment method or contact support.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P15",
+      "Reply_Id": "R15_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 30,
+    "data": {
+      "reply_text": "We can help apply your code. Please Select order (or cart) details and the promo code text; we'll check eligibility and help you apply it.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P15",
+      "Reply_Id": "R15_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 31,
+    "data": {
+      "reply_text": "Verify billing details, available balance, and 3?D Secure/SCA prompts. Try another payment method or update your default payment in Your Account.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P16",
+      "Reply_Id": "R16_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 32,
+    "data": {
+      "reply_text": "Let's fix this together. Check card details, balance, and bank authorization. If it still fails, Select order and we'll help with alternate payment options.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P16",
+      "Reply_Id": "R16_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 33,
+    "data": {
+      "reply_text": "Use account recovery to verify your identity, then reset your password. If issues persist, contact support for verification.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P17",
+      "Reply_Id": "R17_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 34,
+    "data": {
+      "reply_text": "We're here to help you back in. Use Account recovery to verify your identity; if you need assistance, Select order/account and we'll guide the next steps.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P17",
+      "Reply_Id": "R17_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 35,
+    "data": {
+      "reply_text": "If the order hasn't shipped, cancel in Your Orders and place a new order. If shipped, contact the carrier to request a reroute, if available.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P18",
+      "Reply_Id": "R18_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 36,
+    "data": {
+      "reply_text": "I understand, that's stressful. If not shipped, cancel in Your orders and reorder to the correct address. If shipped, we'll help you contact the carrier to try a reroute.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P18",
+      "Reply_Id": "R18_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 37,
+    "data": {
+      "reply_text": "Open Subscriptions, select the plan, and choose Cancel. A confirmation will appear in your account.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P19",
+      "Reply_Id": "R19_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 38,
+    "data": {
+      "reply_text": "We can take care of that. Go to Subscriptions, tap the plan, choose Cancel. We'll confirm and ensure no further charges.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P19",
+      "Reply_Id": "R19_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 39,
+    "data": {
+      "reply_text": "I'm afraid I can't respond to that request. I'd be happy to help you find what you're looking for if you have any other questions.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P20",
+      "Reply_Id": "R20_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 40,
+    "data": {
+      "reply_text": "We truly understand your frustration and apologize for any inconvenience. Could you briefly describe the issue or Select order? We'll do everything we can to assist.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P20",
+      "Reply_Id": "R20_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 41,
+    "data": {
+      "reply_text": "Shipping availability depends on the item and address. Please check the product page for options to your country.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P21",
+      "Reply_Id": "R21_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 42,
+    "data": {
+      "reply_text": "We do offer shipping to many countries, please share your location so I can confirm and let you know the cost.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P21",
+      "Reply_Id": "R21_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 43,
+    "data": {
+      "reply_text": "Some items ship separately due to stock location. You can view each tracking number in Your Orders.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P22",
+      "Reply_Id": "R22_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 44,
+    "data": {
+      "reply_text": "It looks like your order was split, don't worry, I'll check both tracking numbers and let you know when each will arrive.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P22",
+      "Reply_Id": "R22_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 45,
+    "data": {
+      "reply_text": "If the item is under warranty, you can start a claim from Your Orders.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P23",
+      "Reply_Id": "R23_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 46,
+    "data": {
+      "reply_text": "Sorry to hear the product isn't working, please send your order number so we can help with a warranty claim.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P23",
+      "Reply_Id": "R23_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 47,
+    "data": {
+      "reply_text": "Gift receipts can be added before dispatch in the order settings.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P24",
+      "Reply_Id": "R24_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 48,
+    "data": {
+      "reply_text": "Sure, I can help hide the price, could you give me the order number so I can add a gift receipt?",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P24",
+      "Reply_Id": "R24_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 49,
+    "data": {
+      "reply_text": "Store credit can be selected during the return process if available.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P25",
+      "Reply_Id": "R25_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 50,
+    "data": {
+      "reply_text": "Yes, I can issue store credit, please provide your order details so we can start.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P25",
+      "Reply_Id": "R25_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 51,
+    "data": {
+      "reply_text": "Thanks for contacting us. Please open Your Orders and select the delayed item. We’ll review promptly; we can request an expedite or courtesy credit if eligible. If anything isn’t eligible, I’ll outline the next available option.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P26",
+      "Reply_Id": "R26_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 52,
+    "data": {
+      "reply_text": "Thanks for your patience let’s get this sorted. In the app, go to open Orders and select the delayed item. As soon as I confirm, I can request an expedite or courtesy credit if eligible. I’ll keep you updated here until it’s resolved.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P26",
+      "Reply_Id": "R26_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 53,
+    "data": {
+      "reply_text": "Happy to help with this. Please select 'Wrong item' to start an exchange. We’ll review promptly; we can arrange a replacement or refund per policy. If anything isn’t eligible, I’ll outline the next available option.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P27",
+      "Reply_Id": "R27_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 54,
+    "data": {
+      "reply_text": "I hear you and I’ll take care of this. In the app, go to select 'Wrong item' to start an exchange. As soon as I confirm, I can arrange a replacement or refund per policy. I’ll keep you updated here until it’s resolved.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P27",
+      "Reply_Id": "R27_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 55,
+    "data": {
+      "reply_text": "I appreciate the details. Please choose 'Replace or refund' for this order. We’ll review promptly; we'll send a replacement once confirmed. If anything isn’t eligible, I’ll outline the next available option.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P28",
+      "Reply_Id": "R28_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 56,
+    "data": {
+      "reply_text": "I see what happened and I’ll fix it with you. In the app, go to choose 'Replace or refund' for this order. As soon as I confirm, I'll send a replacement once confirmed. I’ll keep you updated here until it’s resolved.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P28",
+      "Reply_Id": "R28_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 57,
+    "data": {
+      "reply_text": "Thanks for contacting us. Please open the order details and share the lower-price link. We’ll review promptly; we'll review and refund any difference if the policy applies. If anything isn’t eligible, I’ll outline the next available option.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P29",
+      "Reply_Id": "R29_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 58,
+    "data": {
+      "reply_text": "Thanks for your patience let’s get this sorted. In the app, go to open the order details and share the lower-price link. As soon as I confirm, I'll review and refund any difference if the policy applies. I’ll keep you updated here until it’s resolved.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P29",
+      "Reply_Id": "R29_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 59,
+    "data": {
+      "reply_text": "Happy to help with this. Please choose 'Problem with order' → 'Refund'. We’ll review promptly; we'll review an exception based on your details. If anything isn’t eligible, I’ll outline the next available option.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P30",
+      "Reply_Id": "R30_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 60,
+    "data": {
+      "reply_text": "I hear you and I’ll take care of this. In the app, go to choose 'Problem with order' → 'Refund'. As soon as I confirm, I'll review an exception based on your details. I’ll keep you updated here until it’s resolved.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P30",
+      "Reply_Id": "R30_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 61,
+    "data": {
+      "reply_text": "I appreciate the details. Please go to Account → Security to start verification. We’ll review promptly; access is restored after verification completes. If anything isn’t eligible, I’ll outline the next available option.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P31",
+      "Reply_Id": "R31_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 62,
+    "data": {
+      "reply_text": "I see what happened and I’ll fix it with you. In the app, go to go to Account → Security to start verification. As soon as I confirm, access is restored after verification completes. I’ll keep you updated here until it’s resolved.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P31",
+      "Reply_Id": "R31_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 63,
+    "data": {
+      "reply_text": "Thanks for contacting us. Please open Returns and pick a new pickup time. We’ll review promptly; we'll confirm the next available slot. If anything isn’t eligible, I’ll outline the next available option.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P32",
+      "Reply_Id": "R32_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 64,
+    "data": {
+      "reply_text": "Thanks for your patience let’s get this sorted. In the app, go to open Returns and pick a new pickup time. As soon as I confirm, I'll confirm the next available slot. I’ll keep you updated here until it’s resolved.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P32",
+      "Reply_Id": "R32_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 65,
+    "data": {
+      "reply_text": "Happy to help with this. Please report the damage with photos in Your Orders. We’ll review promptly; a partial refund is possible if eligible. If anything isn’t eligible, I’ll outline the next available option.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P33",
+      "Reply_Id": "R33_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 66,
+    "data": {
+      "reply_text": "I hear you and I’ll take care of this. In the app, go to report the damage with photos in Orders. As soon as I confirm, a partial refund is possible if eligible. I’ll keep you updated here until it’s resolved.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P33",
+      "Reply_Id": "R33_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 67,
+    "data": {
+      "reply_text": "I appreciate the details. Please open Payment issues → Customs fees and upload the receipt. We’ll review promptly; we reimburse qualifying fees under policy. If anything isn’t eligible, I’ll outline the next available option.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P34",
+      "Reply_Id": "R34_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 68,
+    "data": {
+      "reply_text": "I see what happened and I’ll fix it with you. In the app, go to open Payment issues → Customs fees and upload the receipt. As soon as I confirm, we reimburse qualifying fees under policy. I’ll keep you updated here until it’s resolved.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P34",
+      "Reply_Id": "R34_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 69,
+    "data": {
+      "reply_text": "Thanks for contacting us. Please open delivery preferences for the order. We’ll review promptly; removal is possible if the carrier allows. If anything isn’t eligible, I’ll outline the next available option.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P35",
+      "Reply_Id": "R35_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 70,
+    "data": {
+      "reply_text": "Thanks for your patience let’s get this sorted. In the app, go to open delivery preferences for the order. As soon as I confirm, removal is possible if the carrier allows. I’ll keep you updated here until it’s resolved.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P35",
+      "Reply_Id": "R35_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 71,
+    "data": {
+      "reply_text": "Happy to help with this. Please share the order number and a short summary. We’ll review promptly; we'll connect you with a supervisor. If anything isn’t eligible, I’ll outline the next available option.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P36",
+      "Reply_Id": "R36_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 72,
+    "data": {
+      "reply_text": "I hear you and I’ll take care of this. In the app, go to share the order number and a short summary. As soon as I confirm, I'll connect you with a supervisor. I’ll keep you updated here until it’s resolved.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P36",
+      "Reply_Id": "R36_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 73,
+    "data": {
+      "reply_text": "I appreciate the details. Please open the preorder in Your Orders. We’ll review promptly; we can update the ETA or cancel with a refund. If anything isn’t eligible, I’ll outline the next available option.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P37",
+      "Reply_Id": "R37_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 74,
+    "data": {
+      "reply_text": "I see what happened and I’ll fix it with you. In the app, go to open the preorder in Orders. As soon as I confirm, I can update the ETA or cancel with a refund. I’ll keep you updated here until it’s resolved.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P37",
+      "Reply_Id": "R37_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 75,
+    "data": {
+      "reply_text": "Thanks for contacting us. Please start a return from Your Orders. We’ll review promptly; a prepaid label shows when applicable. If anything isn’t eligible, I’ll outline the next available option.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P38",
+      "Reply_Id": "R38_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 76,
+    "data": {
+      "reply_text": "Thanks for your patience let’s get this sorted. In the app, go to start a return from Orders. As soon as I confirm, a prepaid label shows when applicable. I’ll keep you updated here until it’s resolved.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P38",
+      "Reply_Id": "R38_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 77,
+    "data": {
+      "reply_text": "Happy to help with this. Please start a refund request from Your Orders. We’ll review promptly; we'll process it once it meets policy. If anything isn’t eligible, I’ll outline the next available option.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P39",
+      "Reply_Id": "R39_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 78,
+    "data": {
+      "reply_text": "I hear you and I’ll take care of this. In the app, go to start a refund request from Orders. As soon as I confirm, I'll process it once it meets policy. I’ll keep you updated here until it’s resolved.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P39",
+      "Reply_Id": "R39_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 79,
+    "data": {
+      "reply_text": "I appreciate the details. Please open the charge in Payments → Transactions. We’ll review promptly; we'll guide you and you can also dispute with your bank if needed. If anything isn’t eligible, I’ll outline the next available option.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P40",
+      "Reply_Id": "R40_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 80,
+    "data": {
+      "reply_text": "I see what happened and I’ll fix it with you. In the app, go to open the charge in Payments → Transactions. As soon as I confirm, I'll guide you and you can also dispute with your bank if needed. I’ll keep you updated here until it’s resolved.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P40",
+      "Reply_Id": "R40_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 81,
+    "data": {
+      "reply_text": "Thanks for contacting us. Please go to Your Orders → Change delivery address. We’ll review promptly; updates are possible before the parcel ships. If anything isn’t eligible, I’ll outline the next available option.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P41",
+      "Reply_Id": "R41_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 82,
+    "data": {
+      "reply_text": "Thanks for your patience let’s get this sorted. In the app, go to go to Orders → Change delivery address. As soon as I confirm, updates are possible before the parcel ships. I’ll keep you updated here until it’s resolved.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P41",
+      "Reply_Id": "R41_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 83,
+    "data": {
+      "reply_text": "Happy to help with this. Please choose 'Problem with order' → 'Refund'. We’ll review promptly; we'll review an exception based on your details. If anything isn’t eligible, I’ll outline the next available option.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P42",
+      "Reply_Id": "R42_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 84,
+    "data": {
+      "reply_text": "I hear you and I’ll take care of this. In the app, go to choose 'Problem with order' → 'Refund'. As soon as I confirm, I'll review an exception based on your details. I’ll keep you updated here until it’s resolved.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P42",
+      "Reply_Id": "R42_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 85,
+    "data": {
+      "reply_text": "I appreciate the details. Please choose 'Replace or refund' for this order. We’ll review promptly; we'll send a replacement once confirmed. If anything isn’t eligible, I’ll outline the next available option.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P43",
+      "Reply_Id": "R43_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 86,
+    "data": {
+      "reply_text": "I see what happened and I’ll fix it with you. In the app, go to choose 'Replace or refund' for this order. As soon as I confirm, I'll send a replacement once confirmed. I’ll keep you updated here until it’s resolved.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P43",
+      "Reply_Id": "R43_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 87,
+    "data": {
+      "reply_text": "Thanks for contacting us. Please open Your Orders for this item. We’ll review promptly; we'll help with the best available option within policy. If anything isn’t eligible, I’ll outline the next available option.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P44",
+      "Reply_Id": "R44_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 88,
+    "data": {
+      "reply_text": "Thanks for your patience let’s get this sorted. In the app, go to open Orders for this item. As soon as I confirm, I'll help with the best available option within policy. I’ll keep you updated here until it’s resolved.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P44",
+      "Reply_Id": "R44_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 89,
+    "data": {
+      "reply_text": "Happy to help with this. Please attach the photos/receipts you already provided. We’ll review promptly; we'll proceed without asking for more unless required. If anything isn’t eligible, I’ll outline the next available option.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P45",
+      "Reply_Id": "R45_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 90,
+    "data": {
+      "reply_text": "I hear you and I’ll take care of this. In the app, go to attach the photos/receipts you already provided. As soon as I confirm, I'll proceed without asking for more unless required. I’ll keep you updated here until it’s resolved.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P45",
+      "Reply_Id": "R45_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 91,
+    "data": {
+      "reply_text": "I appreciate the details. Please share your case ID in this chat. We’ll review promptly; we'll prioritize the ticket and post updates here. If anything isn’t eligible, I’ll outline the next available option.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P46",
+      "Reply_Id": "R46_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 92,
+    "data": {
+      "reply_text": "I see what happened and I’ll fix it with you. In the app, go to share your case ID in this chat. As soon as I confirm, I'll prioritize the ticket and post updates here. I’ll keep you updated here until it’s resolved.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P46",
+      "Reply_Id": "R46_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 93,
+    "data": {
+      "reply_text": "Thanks for contacting us. Please choose 'Problem with order' for the item. We’ll review promptly; we'll either resolve the issue or process a refund. If anything isn’t eligible, I’ll outline the next available option.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P47",
+      "Reply_Id": "R47_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 94,
+    "data": {
+      "reply_text": "Thanks for your patience let’s get this sorted. In the app, go to choose 'Problem with order' for the item. As soon as I confirm, I'll either resolve the issue or process a refund. I’ll keep you updated here until it’s resolved.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P47",
+      "Reply_Id": "R47_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 95,
+    "data": {
+      "reply_text": "Happy to help with this. Please confirm a best callback number and time window. We’ll review promptly; a manager will call you back. If anything isn’t eligible, I’ll outline the next available option.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P48",
+      "Reply_Id": "R48_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 96,
+    "data": {
+      "reply_text": "I hear you and I’ll take care of this. In the app, go to confirm a best callback number and time window. As soon as I confirm, a manager will call you back. I’ll keep you updated here until it’s resolved.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P48",
+      "Reply_Id": "R48_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 97,
+    "data": {
+      "reply_text": "I appreciate the details. Please share the policy you think applies. We’ll review promptly; we'll quote the clause and review an exception. If anything isn’t eligible, I’ll outline the next available option.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P49",
+      "Reply_Id": "R49_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 98,
+    "data": {
+      "reply_text": "I see what happened and I’ll fix it with you. In the app, go to share the policy you think applies. As soon as I confirm, I'll quote the clause and review an exception. I’ll keep you updated here until it’s resolved.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P49",
+      "Reply_Id": "R49_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 99,
+    "data": {
+      "reply_text": "Thanks for contacting us. Please start a return request and add a note about the timing. We’ll review promptly; we'll review a late-return exception. If anything isn’t eligible, I’ll outline the next available option.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P50",
+      "Reply_Id": "R50_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 100,
+    "data": {
+      "reply_text": "Thanks for your patience let’s get this sorted. In the app, go to start a return request and add a note about the timing. As soon as I confirm, I'll review a late-return exception. I’ll keep you updated here until it’s resolved.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P50",
+      "Reply_Id": "R50_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 101,
+    "data": {
+      "reply_text": "Happy to help with this. Please open Your Orders → Cancel items. We’ll review promptly; we'll waive fees when policy allows. If anything isn’t eligible, I’ll outline the next available option.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P51",
+      "Reply_Id": "R51_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 102,
+    "data": {
+      "reply_text": "I hear you and I’ll take care of this. In the app, go to open Orders → Cancel items. As soon as I confirm, I'll waive fees when policy allows. I’ll keep you updated here until it’s resolved.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P51",
+      "Reply_Id": "R51_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 103,
+    "data": {
+      "reply_text": "I appreciate the details. Please share your order number. We’ll review promptly; we can add store credit if eligible. If anything isn’t eligible, I’ll outline the next available option.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P52",
+      "Reply_Id": "R52_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 104,
+    "data": {
+      "reply_text": "I see what happened and I’ll fix it with you. In the app, go to share your order number. As soon as I confirm, I can add store credit if eligible. I’ll keep you updated here until it’s resolved.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P52",
+      "Reply_Id": "R52_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 105,
+    "data": {
+      "reply_text": "Thanks for contacting us. Please open the tracking page and pick 'Hold/Reroute' if available. We’ll review promptly; we'll request the change if the carrier permits. If anything isn’t eligible, I’ll outline the next available option.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P53",
+      "Reply_Id": "R53_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 106,
+    "data": {
+      "reply_text": "Thanks for your patience let’s get this sorted. In the app, go to open the tracking page and pick 'Hold/Reroute' if available. As soon as I confirm, I'll request the change if the carrier permits. I’ll keep you updated here until it’s resolved.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P53",
+      "Reply_Id": "R53_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 107,
+    "data": {
+      "reply_text": "Happy to help with this. Please start verification from Account → Security. We’ll review promptly; we'll speed it up and keep you posted. If anything isn’t eligible, I’ll outline the next available option.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P54",
+      "Reply_Id": "R54_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 108,
+    "data": {
+      "reply_text": "I hear you and I’ll take care of this. In the app, go to start verification from Account → Security. As soon as I confirm, I'll speed it up and keep you posted. I’ll keep you updated here until it’s resolved.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P54",
+      "Reply_Id": "R54_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 109,
+    "data": {
+      "reply_text": "I appreciate the details. Please provide the relevant order numbers in one message. We’ll review promptly; we'll review them together and process eligible refunds. If anything isn’t eligible, I’ll outline the next available option.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P55",
+      "Reply_Id": "R55_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 110,
+    "data": {
+      "reply_text": "I see what happened and I’ll fix it with you. In the app, go to provide the relevant order numbers in one message. As soon as I confirm, I'll review them together and process eligible refunds. I’ll keep you updated here until it’s resolved.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P55",
+      "Reply_Id": "R55_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 111,
+    "data": {
+      "reply_text": "Thanks for contacting us. Please open the charge in Payments → Transactions. We’ll review promptly; we'll guide you and you can also dispute with your bank if needed. If anything isn’t eligible, I’ll outline the next available option.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P56",
+      "Reply_Id": "R56_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 112,
+    "data": {
+      "reply_text": "Thanks for your patience let’s get this sorted. In the app, go to open the charge in Payments → Transactions. As soon as I confirm, I'll guide you and you can also dispute with your bank if needed. I’ll keep you updated here until it’s resolved.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P56",
+      "Reply_Id": "R56_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 113,
+    "data": {
+      "reply_text": "Happy to help with this. Please open Your Orders and choose your preferred option. We’ll review promptly; we can issue credit or send a replacement. If anything isn’t eligible, I’ll outline the next available option.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P57",
+      "Reply_Id": "R57_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 114,
+    "data": {
+      "reply_text": "I hear you and I’ll take care of this. In the app, go to open Orders and choose your preferred option. As soon as I confirm, I can issue credit or send a replacement. I’ll keep you updated here until it’s resolved.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P57",
+      "Reply_Id": "R57_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 115,
+    "data": {
+      "reply_text": "I appreciate the details. Please upload photos that show the color issue. We’ll review promptly; we can offer a partial refund or exchange. If anything isn’t eligible, I’ll outline the next available option.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P58",
+      "Reply_Id": "R58_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 116,
+    "data": {
+      "reply_text": "I see what happened and I’ll fix it with you. In the app, go to upload photos that show the color issue. As soon as I confirm, I can offer a partial refund or exchange. I’ll keep you updated here until it’s resolved.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P58",
+      "Reply_Id": "R58_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 117,
+    "data": {
+      "reply_text": "Thanks for contacting us. Please share the error details or a screenshot. We’ll review promptly; we'll fix it and add compensation if appropriate. If anything isn’t eligible, I’ll outline the next available option.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P59",
+      "Reply_Id": "R59_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 118,
+    "data": {
+      "reply_text": "Thanks for your patience let’s get this sorted. In the app, go to share the error details or a screenshot. As soon as I confirm, I'll fix it and add compensation if appropriate. I’ll keep you updated here until it’s resolved.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P59",
+      "Reply_Id": "R59_B",
+      "condition": "B"
+    }
+  },
+  {
+    "id": 119,
+    "data": {
+      "reply_text": "Happy to help with this. Please open the tracking page and choose 'Hold at location' if shown. We’ll review promptly; we'll request the hold if available. If anything isn’t eligible, I’ll outline the next available option.",
+      "bot_mask": "Chatbot A"
+    },
+    "meta": {
+      "Prompt_Id": "P60",
+      "Reply_Id": "R60_A",
+      "condition": "A"
+    }
+  },
+  {
+    "id": 120,
+    "data": {
+      "reply_text": "I hear you and I’ll take care of this. In the app, go to open the tracking page and choose 'Hold at location' if shown. As soon as I confirm, I'll request the hold if available. I’ll keep you updated here until it’s resolved.",
+      "bot_mask": "Chatbot B"
+    },
+    "meta": {
+      "Prompt_Id": "P60",
+      "Reply_Id": "R60_B",
+      "condition": "B"
+    }
+  }
+]

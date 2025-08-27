@@ -1,0 +1,61 @@
+Prompt_Id,Domain,Text,Goal,Emotion & profanity
+P01,greeting,"Hi, could you help me with my order?",assist_order,neutral
+P02,wrong_item,I received the wrong item. What should I do?,exchange,neutral
+P03,broken_item,My product arrived damaged. I want a replacement.,replace,neutral
+P04,missing_package,My package never arrived. What’s the next step?,locate_or_replace,neutral
+P05,delivery_delay,My order is delayed. Can you speed it up?,upgrade_shipping_or_update,neutral
+P06,refund_angry,Your service is terrible—I want a refund.,refund,angry
+P07,return_extension,Can you extend my return window by a few days?,extension,neutral
+P08,address_change,I need to change my delivery address before it ships.,change_address,neutral
+P09,cancel_order,Please cancel my order before it is dispatched.,cancel,neutral
+P10,shipping_upgrade,Can I pay to upgrade to faster shipping?,upgrade_shipping,neutral
+P11,policy_exception,I’m outside the return period—can I still get a refund?,refund_exception,neutral
+P12,exchange_size_color,I need an exchange for a different size/color.,exchange,neutral
+P13,partial_refund,The packaging was damaged—can I get a partial refund?,partial_refund,neutral
+P14,price_adjustment,The price dropped after I bought it. Will you price-match?,price_match,neutral
+P15,coupon_issue,My discount code isn’t working. Can you help?,fix_coupon,neutral
+P16,payment_failure,My payment keeps failing. What can I do?,fix_payment,neutral
+P17,account_locked,My account is locked. How can I regain access?,account_access,neutral
+P18,gift_misaddressed,I sent a gift to the wrong address—what can I do?,correct_address,neutral
+P19,subscription_cancel,Please cancel my subscription and confirm.,cancel_subscription,neutral
+P20,angry_profane,Your service is f***ing terrible.,complaint_anger,angry
+P21,duplicate_charge_threat,"If you don’t fix this duplicate charge today, I’ll file a chargeback.",refund_double_charge,angry
+P22,missing_package_escalate,I’ve waited long enough—escalate this missing package to a manager now.,locate_or_replace,angry
+P23,refund_public_shame,Refund me today or I’ll post this everywhere on social media.,refund,angry
+P24,policy_refusal_push,"Your policy says no, but I expect an exception—make it happen.",refund_exception,angry
+P25,auto_renew_ultimatum,I didn’t approve this auto-renew—refund it or I cancel everything permanently.,refund_autorenew,angry
+P26,late_delivery_compensation,Delivery is late—I want compensation and upgraded shipping now.,compensation_plus_expedite,angry
+P27,wrong_item_now,Send the correct item overnight—today—or I’ll return all of it.,exchange,angry
+P28,broken_item_proof_push,Don’t ask for endless proof—just replace my broken item now.,replace,angry
+P29,price_match_threat,Price dropped—match it today or I’ll buy from your competitor.,price_match,angry
+P30,refund_policy_callout,Hiding behind policy isn’t acceptable—approve my refund today.,refund_exception,angry
+P31,security_block_impatient,My account is blocked—skip the nonsense and unlock me now.,account_access,angry
+P32,courier_missed_again,Courier missed pickup again—book a new slot today and confirm.,reschedule_courier_pickup,angry
+P33,partial_refund_or_return,Either give a partial refund for damage or I return everything.,partial_refund,angry
+P34,customs_fee_push,"Customs fee wasn’t disclosed—reimburse it now, no excuses.",customs_fee_refund,angry
+P35,signature_remove_or_cancel,Remove signature-on-delivery today or cancel and refund.,remove_signature_requirement,angry
+P36,rude_agent_escalation,Your last agent was rude—transfer me to a supervisor who can fix this.,escalate_service_issue,angry
+P37,preorder_compensate_or_cancel,Preorder delays again—compensate me or cancel with full refund.,preorder_update_or_cancel,angry
+P38,return_label_now,Send the return label now—I won’t pay to ship this back.,provide_return_label,angry
+P39,profanity_refund,This is f***ing ridiculous—refund me right now.,refund,angry
+P40,legal_hint,"If you don’t resolve this unauthorized charge, I’ll involve my bank and a lawyer.",refund_dispute,angry
+P41,wrong_address_now,Change the address immediately—don’t ship it to the wrong place.,change_address,angry
+P42,refund_after_use_push,I used it once and it failed—refund me despite your policy.,refund_exception,angry
+P43,replace_no_wait,Stop making me wait for ‘investigation’—replace it now.,replace,angry
+P44,subscription_pause_or_refund,Pause my subscription today or refund the latest charge.,pause_or_refund,angry
+P45,proof_limit_request,"I already sent photos and receipts—don’t ask for more, just act.",process_with_existing_evidence,angry
+P46,priority_queue_demand,Put me in a priority queue and confirm the timeline.,expedite_support,angry
+P47,public_review_warning,Resolve this today or I’ll leave a detailed negative review.,refund_or_fix,angry
+P48,manager_call_back,I want a manager call me back within one hour.,manager_callback,angry
+P49,policy_clarify_then_exception,Quote the exact policy clause—and then approve my exception.,policy_exception_review,angry
+P50,return_window_countdown,Return window ends today—authorize my late return anyway.,extension_authorization,angry
+P51,cancel_now_no_fee,Cancel everything now with no fees and confirm in writing.,cancel_no_fees,angry
+P52,credits_plus_apology,I expect an apology and store credit today for this mess.,apology_and_credit,angry
+P53,reroute_in_transit_demand,Reroute the parcel that’s already in transit to my new address today.,reroute_package,angry
+P54,identity_check_push,Verify me quickly—stop the endless security hoops.,faster_verification,angry
+P55,bulk_refund_multi_orders,Multiple orders are wrong—process a bulk refund now.,bulk_refund,angry
+P56,chargeback_countdown,You have 24 hours before I dispute this with my bank.,refund_dispute,angry
+P57,credit_or_replacement,Give me credit today or ship a replacement overnight—your choice.,choose_credit_or_replace,angry
+P58,wrong_color_compensate,Wrong color—keep it simple: compensate me today.,partial_refund_wrong_color,angry
+P59,system_glitch_comp,Your system glitch caused this—own it and compensate me.,compensation_for_error,angry
+P60,shipment_hold_demand,Hold the shipment at the depot now—I’ll pick it up myself.,hold_for_pickup,angry

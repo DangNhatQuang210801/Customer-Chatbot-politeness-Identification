@@ -1,0 +1,40 @@
+Survey Reply Pairs
+Pair P1 — Missing package (delivery investigation)
+
+P1A (Chatbot A)
+“Check the shipment status in Your Orders. If it shows delivered but you didn’t receive it, select ‘Item not received’ to start a claim.”
+
+P1B (Chatbot B)
+“We understand you haven’t received your package and we’re here to help. Please click Select order so we can identify the parcel and investigate with the carrier for you.”
+
+Pair P2 — Damaged item (refund/replace)
+
+P2A (Chatbot A)
+“If you receive a damaged or defective item, request a free replacement or a full refund through Your Orders. For bulky items from third-party sellers, you can request a home pickup.”
+
+P2B (Chatbot B)
+“We sincerely regret the inconvenience. Please confirm the order via Select order and we’ll arrange a replacement or refund immediately, including a pickup if needed.”
+
+Pair P3 — Warranty / claim
+
+P3A (Chatbot A)
+“If the item is under warranty, you can start a claim from Your Orders.”
+
+P3B (Chatbot B)
+“Sorry to hear the product isn’t working. Please share your order number so we can start a warranty claim and guide you through the process.”
+
+Pair P4 — Policy limit / return deadline
+
+P4A (Chatbot A)
+“Amazon typically offers a 30-day return period, which may vary by category. For exceptions, please contact customer service with your situation.”
+
+P4B (Chatbot B)
+“We’re sorry for the trouble and understand your wish to return. Please confirm the order via Select order so we can review eligibility and do our best to help.”
+
+Pair P5 — Address change / guidance
+
+P5A (Chatbot A)
+“If available, choose Change delivery on the order’s shipment page or contact the carrier. Some shipments can’t be changed once processing begins.”
+
+P5B (Chatbot B)
+“If your order isn’t packed yet, go to Your Orders, open the order, tap Edit to update the address or phone. If it’s already packed or shipped, we’ll help contact the carrier to request a reroute.”
