@@ -1,0 +1,9 @@
+How to read the file
+
+n_pairs_B_has_tag: number of participant×pair observations where B has the tag and A doesn’t.
+
+mean_diff_when_B_has_tag: average of (B − A) scores over those observations.
+
+Negative ⇒ when B uses that tag (and A doesn’t), B scores lower on that construct.
+
+Symmetric columns for A has tag.
