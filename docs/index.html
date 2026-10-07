@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chatbot Politeness Survey</title>
+<meta name="description" content="Aggregate results of a survey in which 350 participants rated two customer-service chatbots on politeness, satisfaction, clarity and compliance.">
+<style>
+:root {
+  color-scheme: light;
+  --page: #f9f9f7; --surface: #fcfcfb; --ink: #0b0b0b; --ink2: #52514e; --muted: #898781;
+  --line: #e1e0d9; --ring: rgba(11,11,11,0.10); --a: #2a78d6; --b: #eb6834;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --page: #0d0d0d; --surface: #1a1a19; --ink: #ffffff; --ink2: #c3c2b7; --muted: #898781;
+    --line: #2c2c2a; --ring: rgba(255,255,255,0.10); --a: #3987e5; --b: #d95926;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--page); color: var(--ink);
+  font: 15px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 920px; margin: 0 auto; padding: 32px 16px 48px; }
+h1 { font-size: 1.6rem; line-height: 1.25; margin: 0 0 8px; }
+h2 { font-size: 1.15rem; margin: 0 0 4px; }
+p { margin: 0 0 12px; }
+a { color: var(--a); }
+.lead { color: var(--ink2); max-width: 68ch; }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 24px 0; }
+.tile, .card { background: var(--surface); border: 1px solid var(--ring); border-radius: 12px; }
+.tile { padding: 14px 16px; }
+.tile .v { font-size: 1.7rem; font-weight: 600; }
+.tile .l { color: var(--ink2); font-size: 0.9rem; }
+.card { padding: 20px 16px 12px; margin: 0 0 20px; }
+.card > p, .note { color: var(--ink2); font-size: 0.92rem; max-width: 72ch; }
+.chart { width: 100%; }
+details { margin: 8px 0 4px; }
+summary { cursor: pointer; color: var(--ink2); font-size: 0.9rem; }
+.scroll { overflow-x: auto; margin: 8px 0 12px; }
+table { border-collapse: collapse; font-size: 0.88rem; font-variant-numeric: tabular-nums; min-width: 100%; }
+th, td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+th { color: var(--ink2); font-weight: 600; }
+h3 { font-size: 0.98rem; margin: 16px 0 0; }
+ul { padding-left: 20px; margin: 0; }
+li { margin-bottom: 6px; }
+footer { color: var(--muted); font-size: 0.85rem; margin-top: 24px; }
+</style>
+</head>
+<body>
+<main>
+<h1>Customer chatbot politeness study</h1>
+<p class="lead">Survey results for two customer-service chatbots, shown to participants as Chatbot A and Chatbot B.
+Each participant rated both chatbots' replies to the same five customer scenarios on a 1–5 scale.
+Research Project 1, Linguistic Data Science Lab, Ruhr University Bochum, by Dang Nhat Quang.
+Code and data: <a href="https://github.com/DangNhatQuang210801/Customer-Chatbot-politeness-Identification">GitHub repository</a>.</p>
+
+<div class="tiles">
+  <div class="tile"><div class="v">350</div><div class="l">participants</div></div>
+  <div class="tile"><div class="v">13,300</div><div class="l">ratings analysed</div></div>
+  <div class="tile"><div class="v">5</div><div class="l">customer scenarios</div></div>
+  <div class="tile"><div class="v">38</div><div class="l">rating items (19 per chatbot)</div></div>
+</div>
+
+<section class="card">
+  <h2>Mean rating by construct</h2>
+  <p>Each dot is the mean over all 350 participants; bars show the 95% confidence interval. The axis is zoomed in: all means lie between 3.69 and 4.13 on the 1–5 scale.</p>
+  <div id="means" class="chart"></div>
+  <details><summary>Table view</summary><div class="scroll"><table><thead><tr><th>Construct</th><th>Chatbot A mean [95% CI]</th><th>Chatbot B mean [95% CI]</th></tr></thead><tbody><tr><td>Politeness (PI)</td><td>4.13 [4.10, 4.16]</td><td>3.94 [3.91, 3.97]</td></tr><tr><td>Satisfaction (CSAT)</td><td>3.97 [3.90, 4.03]</td><td>3.88 [3.82, 3.94]</td></tr><tr><td>Clarity (HL)</td><td>4.00 [3.93, 4.06]</td><td>4.09 [4.04, 4.15]</td></tr><tr><td>Compliance (CMP)</td><td>4.10 [4.04, 4.15]</td><td>3.69 [3.62, 3.75]</td></tr></tbody></table></div></details>
+</section>
+
+<section class="card">
+  <h2>Paired t-tests, Chatbot B against Chatbot A</h2>
+  <p>Negative differences mean Chatbot B was rated lower than Chatbot A.</p>
+  <h3>Scenario level (the test used in the project report)</h3>
+  <p class="note">For each scenario, the mean rating of B minus the mean rating of A. The test uses one difference per scenario (3 to 5 per construct), so df is the number of scenarios minus one and the test has little power. Significant at p &lt; .05: Politeness (PI).</p>
+  <div class="scroll"><table><thead><tr><th>Construct</th><th>Scenarios (k)</th><th>Mean diff (B − A)</th><th>t</th><th>df</th><th>p</th><th>95% CI</th><th>d<sub>z</sub></th></tr></thead><tbody><tr><td>Politeness (PI)</td><td>5</td><td>-0.192</td><td>-3.73</td><td>4</td><td>.020</td><td>[-0.335, -0.049]</td><td>-1.67</td></tr><tr><td>Satisfaction (CSAT)</td><td>3</td><td>-0.091</td><td>-0.90</td><td>2</td><td>.461</td><td>[-0.526, 0.343]</td><td>-0.52</td></tr><tr><td>Clarity (HL)</td><td>3</td><td>+0.095</td><td>0.48</td><td>2</td><td>.676</td><td>[-0.750, 0.940]</td><td>0.28</td></tr><tr><td>Compliance (CMP)</td><td>3</td><td>-0.411</td><td>-1.14</td><td>2</td><td>.372</td><td>[-1.963, 1.140]</td><td>-0.66</td></tr></tbody></table></div>
+  <h3>Participant level (added for this page)</h3>
+  <p class="note">For each participant, their mean rating of B minus their mean rating of A on the same items. This shows how these 350 participants rated these particular replies; unlike the scenario-level test, it says nothing about other scenarios.</p>
+  <div class="scroll"><table><thead><tr><th>Construct</th><th>Participants</th><th>Mean diff (B − A)</th><th>t</th><th>df</th><th>p</th><th>95% CI</th><th>d<sub>z</sub></th></tr></thead><tbody><tr><td>Politeness (PI)</td><td>350</td><td>-0.192</td><td>-8.55</td><td>349</td><td>&lt; .001</td><td>[-0.237, -0.148]</td><td>-0.46</td></tr><tr><td>Satisfaction (CSAT)</td><td>350</td><td>-0.091</td><td>-2.08</td><td>349</td><td>.038</td><td>[-0.178, -0.005]</td><td>-0.11</td></tr><tr><td>Clarity (HL)</td><td>350</td><td>+0.095</td><td>2.12</td><td>349</td><td>.035</td><td>[0.007, 0.184]</td><td>0.11</td></tr><tr><td>Compliance (CMP)</td><td>350</td><td>-0.411</td><td>-9.55</td><td>349</td><td>&lt; .001</td><td>[-0.496, -0.327]</td><td>-0.51</td></tr></tbody></table></div>
+</section>
+
+<section class="card">
+  <h2>Difference by scenario</h2>
+  <p>Mean of B − A for each scenario. Not every scenario had items for every construct (scenarios per construct: Politeness (PI) 5, Satisfaction (CSAT) 3, Clarity (HL) 3, Compliance (CMP) 3). Bars show a paired 95% confidence interval across participants.</p>
+  <div id="scen" class="chart"></div>
+  <details><summary>Table view</summary><div class="scroll"><table><thead><tr><th>Construct</th><th>Scenario</th><th>Mean A</th><th>Mean B</th><th>B − A [95% CI]</th></tr></thead><tbody><tr><td>Politeness (PI)</td><td>Address change (P08)</td><td>4.13</td><td>3.77</td><td>-0.36 [-0.46, -0.26]</td></tr><tr><td>Politeness (PI)</td><td>Damaged item (P03)</td><td>4.14</td><td>4.01</td><td>-0.12 [-0.23, -0.01]</td></tr><tr><td>Politeness (PI)</td><td>Missing package (P04)</td><td>4.16</td><td>3.91</td><td>-0.25 [-0.35, -0.15]</td></tr><tr><td>Politeness (PI)</td><td>Policy limit / return deadline (P07)</td><td>4.09</td><td>3.92</td><td>-0.17 [-0.27, -0.07]</td></tr><tr><td>Politeness (PI)</td><td>Warranty claim (P23)</td><td>4.15</td><td>4.08</td><td>-0.06 [-0.15, +0.03]</td></tr><tr><td>Satisfaction (CSAT)</td><td>Address change (P08)</td><td>4.04</td><td>3.92</td><td>-0.12 [-0.27, +0.02]</td></tr><tr><td>Satisfaction (CSAT)</td><td>Policy limit / return deadline (P07)</td><td>3.96</td><td>4.06</td><td>+0.10 [-0.05, +0.24]</td></tr><tr><td>Satisfaction (CSAT)</td><td>Warranty claim (P23)</td><td>3.90</td><td>3.65</td><td>-0.25 [-0.40, -0.10]</td></tr><tr><td>Clarity (HL)</td><td>Address change (P08)</td><td>3.80</td><td>4.26</td><td>+0.46 [+0.32, +0.60]</td></tr><tr><td>Clarity (HL)</td><td>Damaged item (P03)</td><td>4.07</td><td>3.86</td><td>-0.21 [-0.37, -0.05]</td></tr><tr><td>Clarity (HL)</td><td>Missing package (P04)</td><td>4.13</td><td>4.16</td><td>+0.03 [-0.11, +0.17]</td></tr><tr><td>Compliance (CMP)</td><td>Missing package (P04)</td><td>4.14</td><td>4.05</td><td>-0.09 [-0.24, +0.06]</td></tr><tr><td>Compliance (CMP)</td><td>Policy limit / return deadline (P07)</td><td>4.13</td><td>3.00</td><td>-1.13 [-1.28, -0.99]</td></tr><tr><td>Compliance (CMP)</td><td>Warranty claim (P23)</td><td>4.03</td><td>4.01</td><td>-0.01 [-0.17, +0.14]</td></tr></tbody></table></div></details>
+</section>
+
+<section class="card">
+  <h2>How the ratings are distributed</h2>
+  <p>Share of all ratings at each point of the scale, by construct and chatbot.</p>
+  <div id="dist" class="chart"></div>
+  <details><summary>Table view</summary><div class="scroll"><table><thead><tr><th>Construct</th><th>Chatbot</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr></thead><tbody><tr><td>Politeness (PI)</td><td>A</td><td>0.7%</td><td>3.7%</td><td>20.1%</td><td>32.6%</td><td>42.9%</td></tr><tr><td>Politeness (PI)</td><td>B</td><td>2.5%</td><td>5.6%</td><td>22.2%</td><td>35.0%</td><td>34.7%</td></tr><tr><td>Satisfaction (CSAT)</td><td>A</td><td>2.7%</td><td>5.6%</td><td>20.2%</td><td>35.3%</td><td>36.2%</td></tr><tr><td>Satisfaction (CSAT)</td><td>B</td><td>2.2%</td><td>3.4%</td><td>30.0%</td><td>33.3%</td><td>31.0%</td></tr><tr><td>Clarity (HL)</td><td>A</td><td>2.7%</td><td>5.5%</td><td>19.0%</td><td>34.9%</td><td>37.9%</td></tr><tr><td>Clarity (HL)</td><td>B</td><td>1.6%</td><td>3.0%</td><td>20.3%</td><td>34.8%</td><td>40.4%</td></tr><tr><td>Compliance (CMP)</td><td>A</td><td>2.1%</td><td>4.3%</td><td>18.9%</td><td>31.3%</td><td>43.4%</td></tr><tr><td>Compliance (CMP)</td><td>B</td><td>1.7%</td><td>16.6%</td><td>21.4%</td><td>32.0%</td><td>28.3%</td></tr></tbody></table></div></details>
+</section>
+
+<section class="card">
+  <h2>About the data</h2>
+  <ul class="note">
+    <li>Source: <code>survey/answers_long.csv</code>, the cleaned long-format export of the survey (350 participants × 38 items = 13,300 ratings).</li>
+    <li>The questionnaire had 40 rating items. The two reverse-worded items ("The reply feels curt or blaming") were mapped to a separate check construct and are not part of the four scores.</li>
+    <li>42 of 350 participants answered that English is their first language.</li>
+    <li>Item reliability (Cronbach's alpha) was not calculated, and no mixed-effects models were fitted.</li>
+    <li>This page shows aggregates only. It was generated by <code>dashboard/build_dashboard.py</code>.</li>
+  </ul>
+</section>
+<footer>Ratings: 1 = completely disagree, 5 = completely agree.</footer>
+</main>
+<script src="https://cdn.plot.ly/plotly-basic-4.1.1.min.js" charset="utf-8"></script>
+<script>
+const FIGS = {"means":{"data":[{"customdata":[[4.1,4.16],[3.9,4.03],[3.93,4.06],[4.04,4.15]],"error_x":{"array":[0.03,0.064,0.064,0.058],"color":"#2a78d6","thickness":2,"type":"data","width":4},"hovertemplate":"Chatbot A\u003cbr\u003e%{y}: %{x:.2f}\u003cbr\u003e95% CI %{customdata[0]} to %{customdata[1]}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#2a78d6","line":{"color":"#fcfcfb","width":2},"size":12},"mode":"markers","name":"Chatbot A","offsetgroup":"A","x":[4.131,3.968,3.998,4.097],"y":["Politeness (PI)","Satisfaction (CSAT)","Clarity (HL)","Compliance (CMP)"],"type":"scatter"},{"customdata":[[3.91,3.97],[3.82,3.94],[4.04,4.15],[3.62,3.75]],"error_x":{"array":[0.033,0.059,0.056,0.062],"color":"#eb6834","thickness":2,"type":"data","width":4},"hovertemplate":"Chatbot B\u003cbr\u003e%{y}: %{x:.2f}\u003cbr\u003e95% CI %{customdata[0]} to %{customdata[1]}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#eb6834","line":{"color":"#fcfcfb","width":2},"size":12},"mode":"markers","name":"Chatbot B","offsetgroup":"B","x":[3.939,3.876,4.093,3.686],"y":["Politeness (PI)","Satisfaction (CSAT)","Clarity (HL)","Compliance (CMP)"],"type":"scatter"}],"layout":{"template":{"data":{"scatter":[{"type":"scatter"}]}},"margin":{"l":8,"r":12,"t":36,"b":48},"font":{"family":"system-ui, -apple-system, Segoe UI, sans-serif","size":13,"color":"#0b0b0b"},"legend":{"font":{"color":"#52514e"},"orientation":"h","x":0,"y":1.0,"yanchor":"bottom"},"hoverlabel":{"font":{"family":"system-ui, sans-serif"}},"height":320,"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)","xaxis":{"tickfont":{"color":"#898781"},"title":{"font":{"color":"#52514e","size":12},"text":"Mean rating (1\u20135)"},"gridcolor":"#e1e0d9","linecolor":"#c3c2b7","zerolinecolor":"#c3c2b7"},"yaxis":{"tickfont":{"color":"#52514e"},"gridcolor":"#e1e0d9","linecolor":"#c3c2b7","automargin":true,"autorange":"reversed","showgrid":false},"scattermode":"group","scattergap":0.5}},"scen":{"data":[{"customdata":[[4.13,3.77],[4.14,4.01],[4.16,3.91],[4.09,3.92],[4.15,4.08]],"error_x":{"array":[0.1,0.109,0.103,0.102,0.091],"color":"#2a78d6","thickness":2,"type":"data","width":4},"hovertemplate":"%{y}\u003cbr\u003eB \u2212 A: %{x:+.2f}\u003cbr\u003eA %{customdata[0]}, B %{customdata[1]}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"A","marker":{"color":"#2a78d6","line":{"color":"#fcfcfb","width":2},"size":11},"mode":"markers","name":"Chatbot A rated higher","showlegend":true,"x":[-0.357,-0.123,-0.251,-0.169,-0.061],"y":["Address change","Damaged item","Missing package","Policy limit \u002f\u003cbr\u003ereturn deadline","Warranty claim"],"type":"scatter","xaxis":"x","yaxis":"y"},{"customdata":[],"error_x":{"array":[],"color":"#eb6834","thickness":2,"type":"data","width":4},"hovertemplate":"%{y}\u003cbr\u003eB \u2212 A: %{x:+.2f}\u003cbr\u003eA %{customdata[0]}, B %{customdata[1]}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"B","marker":{"color":"#eb6834","line":{"color":"#fcfcfb","width":2},"size":11},"mode":"markers","name":"Chatbot B rated higher","showlegend":false,"x":[],"y":[],"type":"scatter","xaxis":"x","yaxis":"y"},{"customdata":[[4.04,3.92],[3.9,3.65]],"error_x":{"array":[0.144,0.151],"color":"#2a78d6","thickness":2,"type":"data","width":4},"hovertemplate":"%{y}\u003cbr\u003eB \u2212 A: %{x:+.2f}\u003cbr\u003eA %{customdata[0]}, B %{customdata[1]}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"A","marker":{"color":"#2a78d6","line":{"color":"#fcfcfb","width":2},"size":11},"mode":"markers","name":"Chatbot A rated higher","showlegend":false,"x":[-0.123,-0.249],"y":["Address change","Warranty claim"],"type":"scatter","xaxis":"x2","yaxis":"y2"},{"customdata":[[3.96,4.06]],"error_x":{"array":[0.146],"color":"#eb6834","thickness":2,"type":"data","width":4},"hovertemplate":"%{y}\u003cbr\u003eB \u2212 A: %{x:+.2f}\u003cbr\u003eA %{customdata[0]}, B %{customdata[1]}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"B","marker":{"color":"#eb6834","line":{"color":"#fcfcfb","width":2},"size":11},"mode":"markers","name":"Chatbot B rated higher","showlegend":true,"x":[0.097],"y":["Policy limit \u002f\u003cbr\u003ereturn deadline"],"type":"scatter","xaxis":"x2","yaxis":"y2"},{"customdata":[[4.07,3.86]],"error_x":{"array":[0.157],"color":"#2a78d6","thickness":2,"type":"data","width":4},"hovertemplate":"%{y}\u003cbr\u003eB \u2212 A: %{x:+.2f}\u003cbr\u003eA %{customdata[0]}, B %{customdata[1]}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"A","marker":{"color":"#2a78d6","line":{"color":"#fcfcfb","width":2},"size":11},"mode":"markers","name":"Chatbot A rated higher","showlegend":false,"x":[-0.209],"y":["Damaged item"],"type":"scatter","xaxis":"x3","yaxis":"y3"},{"customdata":[[3.8,4.26],[4.13,4.16]],"error_x":{"array":[0.141,0.143],"color":"#eb6834","thickness":2,"type":"data","width":4},"hovertemplate":"%{y}\u003cbr\u003eB \u2212 A: %{x:+.2f}\u003cbr\u003eA %{customdata[0]}, B %{customdata[1]}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"B","marker":{"color":"#eb6834","line":{"color":"#fcfcfb","width":2},"size":11},"mode":"markers","name":"Chatbot B rated higher","showlegend":false,"x":[0.463,0.031],"y":["Address change","Missing package"],"type":"scatter","xaxis":"x3","yaxis":"y3"},{"customdata":[[4.14,4.05],[4.13,3.0],[4.03,4.01]],"error_x":{"array":[0.153,0.145,0.152],"color":"#2a78d6","thickness":2,"type":"data","width":4},"hovertemplate":"%{y}\u003cbr\u003eB \u2212 A: %{x:+.2f}\u003cbr\u003eA %{customdata[0]}, B %{customdata[1]}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"A","marker":{"color":"#2a78d6","line":{"color":"#fcfcfb","width":2},"size":11},"mode":"markers","name":"Chatbot A rated higher","showlegend":false,"x":[-0.089,-1.131,-0.014],"y":["Missing package","Policy limit \u002f\u003cbr\u003ereturn deadline","Warranty claim"],"type":"scatter","xaxis":"x4","yaxis":"y4"},{"customdata":[],"error_x":{"array":[],"color":"#eb6834","thickness":2,"type":"data","width":4},"hovertemplate":"%{y}\u003cbr\u003eB \u2212 A: %{x:+.2f}\u003cbr\u003eA %{customdata[0]}, B %{customdata[1]}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"B","marker":{"color":"#eb6834","line":{"color":"#fcfcfb","width":2},"size":11},"mode":"markers","name":"Chatbot B rated higher","showlegend":false,"x":[],"y":[],"type":"scatter","xaxis":"x4","yaxis":"y4"}],"layout":{"template":{"data":{"scatter":[{"type":"scatter"}]}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"matches":"x4","showticklabels":false,"tickfont":{"color":"#898781"},"title":{"font":{"color":"#52514e","size":12},"text":""},"gridcolor":"#e1e0d9","linecolor":"#c3c2b7","zerolinecolor":"#c3c2b7","zeroline":true,"zerolinewidth":1},"yaxis":{"anchor":"x","domain":[0.717857142857143,1.0],"tickfont":{"color":"#52514e"},"gridcolor":"#e1e0d9","linecolor":"#c3c2b7","automargin":true,"autorange":"reversed","showgrid":false},"xaxis2":{"anchor":"y2","domain":[0.0,1.0],"matches":"x4","showticklabels":false,"tickfont":{"color":"#898781"},"title":{"font":{"color":"#52514e","size":12},"text":""},"gridcolor":"#e1e0d9","linecolor":"#c3c2b7","zerolinecolor":"#c3c2b7","zeroline":true,"zerolinewidth":1},"yaxis2":{"anchor":"x2","domain":[0.4785714285714286,0.6478571428571429],"tickfont":{"color":"#52514e"},"gridcolor":"#e1e0d9","linecolor":"#c3c2b7","automargin":true,"autorange":"reversed","showgrid":false},"xaxis3":{"anchor":"y3","domain":[0.0,1.0],"matches":"x4","showticklabels":false,"tickfont":{"color":"#898781"},"title":{"font":{"color":"#52514e","size":12},"text":""},"gridcolor":"#e1e0d9","linecolor":"#c3c2b7","zerolinecolor":"#c3c2b7","zeroline":true,"zerolinewidth":1},"yaxis3":{"anchor":"x3","domain":[0.2392857142857143,0.4085714285714286],"tickfont":{"color":"#52514e"},"gridcolor":"#e1e0d9","linecolor":"#c3c2b7","automargin":true,"autorange":"reversed","showgrid":false},"xaxis4":{"anchor":"y4","domain":[0.0,1.0],"tickfont":{"color":"#898781"},"title":{"font":{"color":"#52514e","size":12},"text":"Chatbot B \u2212 Chatbot A (rating points)"},"gridcolor":"#e1e0d9","linecolor":"#c3c2b7","zerolinecolor":"#c3c2b7","zeroline":true,"zerolinewidth":1},"yaxis4":{"anchor":"x4","domain":[0.0,0.1692857142857143],"tickfont":{"color":"#52514e"},"gridcolor":"#e1e0d9","linecolor":"#c3c2b7","automargin":true,"autorange":"reversed","showgrid":false},"annotations":[{"font":{"size":13,"color":"#0b0b0b"},"showarrow":false,"text":"Politeness (PI)","x":0,"xanchor":"left","xref":"paper","y":1.0,"yanchor":"bottom","yref":"paper"},{"font":{"size":13,"color":"#0b0b0b"},"showarrow":false,"text":"Satisfaction (CSAT)","x":0,"xanchor":"left","xref":"paper","y":0.6478571428571429,"yanchor":"bottom","yref":"paper"},{"font":{"size":13,"color":"#0b0b0b"},"showarrow":false,"text":"Clarity (HL)","x":0,"xanchor":"left","xref":"paper","y":0.4085714285714286,"yanchor":"bottom","yref":"paper"},{"font":{"size":13,"color":"#0b0b0b"},"showarrow":false,"text":"Compliance (CMP)","x":0,"xanchor":"left","xref":"paper","y":0.1692857142857143,"yanchor":"bottom","yref":"paper"}],"margin":{"l":8,"r":12,"t":64,"b":48},"font":{"family":"system-ui, -apple-system, Segoe UI, sans-serif","size":13,"color":"#0b0b0b"},"legend":{"font":{"color":"#52514e"},"orientation":"h","x":0,"y":1.06,"yanchor":"bottom"},"hoverlabel":{"font":{"family":"system-ui, sans-serif"}},"height":600,"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)"}},"dist":{"data":[{"hovertemplate":"%{y}\u003cbr\u003eScore 1: %{x:.1f}% of ratings\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#c4383a","line":{"color":"#fcfcfb","width":1}},"name":"1 completely disagree","orientation":"h","x":[0.74,2.49,2.67,2.19,2.67,1.62,2.1,1.71],"y":["Politeness \u00b7 A","Politeness \u00b7 B","Satisfaction \u00b7 A","Satisfaction \u00b7 B","Clarity \u00b7 A","Clarity \u00b7 B","Compliance \u00b7 A","Compliance \u00b7 B"],"type":"bar"},{"hovertemplate":"%{y}\u003cbr\u003eScore 2: %{x:.1f}% of ratings\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#ee8c84","line":{"color":"#fcfcfb","width":1}},"name":"2","orientation":"h","x":[3.71,5.57,5.62,3.43,5.52,2.95,4.29,16.57],"y":["Politeness \u00b7 A","Politeness \u00b7 B","Satisfaction \u00b7 A","Satisfaction \u00b7 B","Clarity \u00b7 A","Clarity \u00b7 B","Compliance \u00b7 A","Compliance \u00b7 B"],"type":"bar"},{"hovertemplate":"%{y}\u003cbr\u003eScore 3: %{x:.1f}% of ratings\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#e6e5df","line":{"color":"#fcfcfb","width":1}},"name":"3","orientation":"h","x":[20.06,22.23,20.19,30.0,19.05,20.29,18.86,21.43],"y":["Politeness \u00b7 A","Politeness \u00b7 B","Satisfaction \u00b7 A","Satisfaction \u00b7 B","Clarity \u00b7 A","Clarity \u00b7 B","Compliance \u00b7 A","Compliance \u00b7 B"],"type":"bar"},{"hovertemplate":"%{y}\u003cbr\u003eScore 4: %{x:.1f}% of ratings\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#86b6ef","line":{"color":"#fcfcfb","width":1}},"name":"4","orientation":"h","x":[32.63,34.97,35.33,33.33,34.86,34.76,31.33,32.0],"y":["Politeness \u00b7 A","Politeness \u00b7 B","Satisfaction \u00b7 A","Satisfaction \u00b7 B","Clarity \u00b7 A","Clarity \u00b7 B","Compliance \u00b7 A","Compliance \u00b7 B"],"type":"bar"},{"hovertemplate":"%{y}\u003cbr\u003eScore 5: %{x:.1f}% of ratings\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#256abf","line":{"color":"#fcfcfb","width":1}},"name":"5 completely agree","orientation":"h","x":[42.86,34.74,36.19,31.05,37.9,40.38,43.43,28.29],"y":["Politeness \u00b7 A","Politeness \u00b7 B","Satisfaction \u00b7 A","Satisfaction \u00b7 B","Clarity \u00b7 A","Clarity \u00b7 B","Compliance \u00b7 A","Compliance \u00b7 B"],"type":"bar"}],"layout":{"template":{"data":{"scatter":[{"type":"scatter"}]}},"margin":{"l":8,"r":12,"t":36,"b":48},"font":{"family":"system-ui, -apple-system, Segoe UI, sans-serif","size":13,"color":"#0b0b0b"},"legend":{"font":{"color":"#52514e"},"orientation":"h","x":0,"y":1.0,"yanchor":"bottom","traceorder":"normal"},"hoverlabel":{"font":{"family":"system-ui, sans-serif"}},"height":420,"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)","xaxis":{"tickfont":{"color":"#898781"},"title":{"font":{"color":"#52514e","size":12},"text":"Share of ratings (%)"},"gridcolor":"#e1e0d9","linecolor":"#c3c2b7","zerolinecolor":"#c3c2b7","range":[0,100],"ticksuffix":"%"},"yaxis":{"tickfont":{"color":"#52514e"},"gridcolor":"#e1e0d9","linecolor":"#c3c2b7","automargin":true,"autorange":"reversed","showgrid":false},"barmode":"stack","bargap":0.45}}};
+const DARK = {"#2a78d6": "#3987e5", "#eb6834": "#d95926", "#0b0b0b": "#ffffff", "#52514e": "#c3c2b7", "#e1e0d9": "#2c2c2a", "#c3c2b7": "#383835", "#fcfcfb": "#1a1a19", "#e6e5df": "#6b6a65"};
+const mq = matchMedia("(prefers-color-scheme: dark)");
+function draw() {
+  for (const [id, fig] of Object.entries(FIGS)) {
+    let s = JSON.stringify(fig);
+    if (mq.matches) s = s.replace(/#[0-9a-f]{6}/gi, m => DARK[m.toLowerCase()] || m);
+    const f = JSON.parse(s);
+    Plotly.react(id, f.data, f.layout, {responsive: true, displayModeBar: false});
+  }
+}
+draw();
+mq.addEventListener("change", draw);
+</script>
+</body>
+</html>
